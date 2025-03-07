@@ -171,7 +171,7 @@ CREATE TABLE `product` (
   `Price` decimal(10,2) NOT NULL,
   `ProductImage` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ProductID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,7 +180,6 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'Espresso','Coffee',120.00,NULL),(2,'Cappuccino','Coffee',150.00,NULL),(3,'Latte','Coffee',160.00,NULL),(4,'Americano','Coffee',110.00,NULL),(5,'Mocha','Coffee',170.00,NULL),(6,'Green Tea','Tea',130.00,NULL),(7,'Black Tea','Tea',125.00,NULL),(8,'Blueberry Muffin','Pastry',90.00,NULL),(9,'Croissant','Pastry',120.00,NULL),(10,'Chocolate Chip Cookie','Pastry',75.00,NULL);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -193,4 +192,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-07 15:24:21
+-- Dump completed on 2025-03-07 21:29:15
