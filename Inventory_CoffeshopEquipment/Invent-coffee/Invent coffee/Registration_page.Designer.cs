@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             SignUpPage_Label = new Label();
             SignUpUsername_Label = new Label();
@@ -40,7 +41,10 @@
             SignUpPassword_textBox = new TextBox();
             label1 = new Label();
             SignIn_Btn = new Button();
+            ErrorProviderSigninUsername = new ErrorProvider(components);
+            ErrorLabelSignUp = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ErrorProviderSigninUsername).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -99,6 +103,7 @@
             SignUpCPassword_textBox.Name = "SignUpCPassword_textBox";
             SignUpCPassword_textBox.Size = new Size(247, 23);
             SignUpCPassword_textBox.TabIndex = 16;
+            SignUpCPassword_textBox.TextChanged += SignUpCPassword_textBox_TextChanged;
             // 
             // SignUpShowPassword_checkBox
             // 
@@ -145,6 +150,7 @@
             SignUpPassword_textBox.Name = "SignUpPassword_textBox";
             SignUpPassword_textBox.Size = new Size(247, 23);
             SignUpPassword_textBox.TabIndex = 12;
+            SignUpPassword_textBox.TextChanged += SignUpPassword_textBox_TextChanged;
             // 
             // label1
             // 
@@ -172,11 +178,26 @@
             SignIn_Btn.UseVisualStyleBackColor = false;
             SignIn_Btn.Click += SignIn_Btn_Click;
             // 
+            // ErrorProviderSigninUsername
+            // 
+            ErrorProviderSigninUsername.ContainerControl = this;
+            // 
+            // ErrorLabelSignUp
+            // 
+            ErrorLabelSignUp.AutoSize = true;
+            ErrorLabelSignUp.ForeColor = Color.Red;
+            ErrorLabelSignUp.Location = new Point(268, 358);
+            ErrorLabelSignUp.Name = "ErrorLabelSignUp";
+            ErrorLabelSignUp.Size = new Size(38, 15);
+            ErrorLabelSignUp.TabIndex = 20;
+            ErrorLabelSignUp.Text = "label2";
+            // 
             // Registration_page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(111, 78, 55);
+            Controls.Add(ErrorLabelSignUp);
             Controls.Add(label1);
             Controls.Add(SignIn_Btn);
             Controls.Add(SignUpCPassword_Label);
@@ -193,6 +214,7 @@
             Name = "Registration_page";
             Size = new Size(788, 450);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ErrorProviderSigninUsername).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -211,5 +233,7 @@
         private TextBox SignUpPassword_textBox;
         private Label label1;
         private Button SignIn_Btn;
+        private ErrorProvider ErrorProviderSigninUsername;
+        private Label ErrorLabelSignUp;
     }
 }

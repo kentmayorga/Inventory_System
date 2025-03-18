@@ -14,5 +14,8 @@
     <Compile Update="Registration_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Shop_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

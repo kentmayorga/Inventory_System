@@ -63,6 +63,26 @@ namespace Invent_coffee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ab6ea7db_513a_4397_9cbd_e99ba6a30e0f {
+            get {
+                object obj = ResourceManager.GetObject("ab6ea7db-513a-4397-9cbd-e99ba6a30e0f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ab6ea7db_513a_4397_9cbd_e99ba6a30e0f1 {
+            get {
+                object obj = ResourceManager.GetObject("ab6ea7db-513a-4397-9cbd-e99ba6a30e0f1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cup_15002205 {
             get {
                 object obj = ResourceManager.GetObject("cup_15002205", resourceCulture);

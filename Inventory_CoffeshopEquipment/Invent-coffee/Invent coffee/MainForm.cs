@@ -53,6 +53,11 @@ public partial class MainForm : Form
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Home_Page(this));
     }
+    public void ShowShopPage()
+    {
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Shop_Page(this));
+    }
 } 
 
 

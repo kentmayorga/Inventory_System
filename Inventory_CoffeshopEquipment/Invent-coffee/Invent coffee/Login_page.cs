@@ -19,6 +19,7 @@ namespace Invent_coffee
         {
             InitializeComponent();
             _mainform = mainform;
+            ErrorMessageLabel.Visible = false;
         }
 
         private void Password_txtBox_TextChanged(object sender, EventArgs e)
@@ -66,13 +67,24 @@ namespace Invent_coffee
             string username = Username_txtBox.Text;
             string password = Password_txtBox.Text;
 
+            if (string.IsNullOrWhiteSpace(username)) {
+                errorProviderUsername.SetError(Username_txtBox, "This field cannot be empty!");
+            }
+            else
+            {
+                errorProviderUsername.SetError(Username_txtBox, "");
+            }
+
             if (AuthenticateLogin(username, password))
             {
+                ErrorMessageLabel.Visible = false;
                 MessageBox.Show("Login Successful.");
             }
             else
             {
-                MessageBox.Show("Failed Login");
+                ErrorMessageLabel.Text = ("Failed Login, Try Again.");
+                ErrorMessageLabel.Visible = true;
+                return;
             }
 
             _mainform.ShowHomePage();

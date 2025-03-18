@@ -14,8 +14,18 @@ namespace Invent_coffee
         {
             InitializeComponent();
             _mainform = mainform;
+            ErrorLabelSignUp.Visible = false;
         }
 
+
+        private void SignUpPassword_textBox_TextChanged(object sender, EventArgs e)
+        {
+            SignUpPassword_textBox.PasswordChar = '*';
+        }
+        private void SignUpCPassword_textBox_TextChanged(object sender, EventArgs e)
+        {
+            SignUpCPassword_textBox.PasswordChar = '*';
+        }
         private void SignUpShowPassword_checkBox_CheckedChanged(object sender, EventArgs e)
         {
             char passwordChar = SignUpShowPassword_checkBox.Checked ? '\0' : '*';
@@ -29,16 +39,33 @@ namespace Invent_coffee
             string password = SignUpPassword_textBox.Text;
             string confirmPassword = SignUpCPassword_textBox.Text;
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(username))
             {
-                MessageBox.Show("Username and password cannot be empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                ErrorProviderSigninUsername.SetError(SignUpUsername_textBox, "This field cannot be empty!");
+            }
+            else
+            {
+                ErrorProviderSigninUsername.SetError(SignUpUsername_textBox, "");
             }
 
-            if (password != confirmPassword)
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Passwords do not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ErrorLabelSignUp.Text = ("Username and password cannot be empty!");
+                ErrorLabelSignUp.Visible = true;
                 return;
+            }
+            else
+            {
+
+                if (password != confirmPassword)
+                {
+                    ErrorLabelSignUp.Text = ("Passwords do not match!");
+                    ErrorLabelSignUp.Visible = true;
+                    return;
+                }
+                else {
+                    ErrorLabelSignUp.Visible = false;
+                }
             }
 
             using (MySqlConnection conn = new MySqlConnection(connectiondb))

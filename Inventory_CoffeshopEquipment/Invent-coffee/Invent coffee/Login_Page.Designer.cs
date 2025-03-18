@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             SignUpPage_Label = new Label();
             BrandPicBox = new PictureBox();
             Username_Label = new Label();
@@ -38,7 +39,10 @@
             LoginBtn = new Button();
             SignUpLabel = new Label();
             RegistrationBtn = new Button();
+            errorProviderUsername = new ErrorProvider(components);
+            ErrorMessageLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)BrandPicBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderUsername).BeginInit();
             SuspendLayout();
             // 
             // SignUpPage_Label
@@ -155,11 +159,27 @@
             RegistrationBtn.UseVisualStyleBackColor = false;
             RegistrationBtn.Click += RegistrationBtn_Click;
             // 
+            // errorProviderUsername
+            // 
+            errorProviderUsername.ContainerControl = this;
+            // 
+            // ErrorMessageLabel
+            // 
+            ErrorMessageLabel.AutoSize = true;
+            ErrorMessageLabel.ForeColor = Color.Red;
+            errorProviderUsername.SetIconAlignment(ErrorMessageLabel, ErrorIconAlignment.MiddleLeft);
+            ErrorMessageLabel.Location = new Point(274, 356);
+            ErrorMessageLabel.Name = "ErrorMessageLabel";
+            ErrorMessageLabel.Size = new Size(38, 15);
+            ErrorMessageLabel.TabIndex = 16;
+            ErrorMessageLabel.Text = "label1";
+            // 
             // Login_page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(111, 78, 55);
+            Controls.Add(ErrorMessageLabel);
             Controls.Add(RegistrationBtn);
             Controls.Add(SignUpLabel);
             Controls.Add(LoginBtn);
@@ -174,6 +194,7 @@
             Name = "Login_page";
             Size = new Size(788, 450);
             ((System.ComponentModel.ISupportInitialize)BrandPicBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProviderUsername).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -190,5 +211,7 @@
         private Button LoginBtn;
         private Label SignUpLabel;
         private Button RegistrationBtn;
+        private ErrorProvider errorProviderUsername;
+        private Label ErrorMessageLabel;
     }
 }

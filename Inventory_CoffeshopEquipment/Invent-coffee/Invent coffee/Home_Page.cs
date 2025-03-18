@@ -10,13 +10,23 @@ using System.Windows.Forms;
 
 namespace Invent_coffee
 {
-    public partial class Home_Page: UserControl
+    public partial class Home_Page : UserControl
     {
         private MainForm _mainform;
         public Home_Page(MainForm mainform)
         {
             InitializeComponent();
             _mainform = mainform;
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            _mainform.ShowLoginPage();
+        }
+
+        private void ShopButton_Click(object sender, EventArgs e)
+        {
+            _mainform.ShowShopPage();
         }
     }
 }
