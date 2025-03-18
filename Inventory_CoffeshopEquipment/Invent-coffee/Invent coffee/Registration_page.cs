@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -15,10 +9,18 @@ namespace Invent_coffee
     {
         private MainForm _mainform;
         private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+
         public Registration_page(MainForm mainform)
         {
             InitializeComponent();
             _mainform = mainform;
+        }
+
+        private void SignUpShowPassword_checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            char passwordChar = SignUpShowPassword_checkBox.Checked ? '\0' : '*';
+            SignUpPassword_textBox.PasswordChar = passwordChar;
+            SignUpCPassword_textBox.PasswordChar = passwordChar;
         }
 
         private void SignUp_Btn_Click(object sender, EventArgs e)
@@ -41,11 +43,6 @@ namespace Invent_coffee
 
             using (MySqlConnection conn = new MySqlConnection(connectiondb))
             {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-
                 try
                 {
                     conn.Open();
@@ -60,7 +57,6 @@ namespace Invent_coffee
                         if (result > 0)
                         {
                             MessageBox.Show("User Registered Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                             _mainform.ShowLoginPage();
                         }
                         else
@@ -76,13 +72,6 @@ namespace Invent_coffee
                 catch (Exception ex)
                 {
                     MessageBox.Show("Unexpected Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    if (conn.State == ConnectionState.Open)
-                    {
-                        conn.Close();
-                    }
                 }
             }
         }

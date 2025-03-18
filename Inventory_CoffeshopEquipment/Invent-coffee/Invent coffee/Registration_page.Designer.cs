@@ -46,9 +46,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.cup_15002205;
-            pictureBox1.Location = new Point(302, 91);
+            pictureBox1.Location = new Point(264, 68);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(72, 64);
+            pictureBox1.Size = new Size(63, 48);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -57,9 +58,9 @@
             // 
             SignUpPage_Label.AutoSize = true;
             SignUpPage_Label.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpPage_Label.Location = new Point(380, 118);
+            SignUpPage_Label.Location = new Point(332, 88);
             SignUpPage_Label.Name = "SignUpPage_Label";
-            SignUpPage_Label.Size = new Size(219, 37);
+            SignUpPage_Label.Size = new Size(174, 28);
             SignUpPage_Label.TabIndex = 6;
             SignUpPage_Label.Text = "REGISTRATION";
             // 
@@ -67,46 +68,50 @@
             // 
             SignUpUsername_Label.AutoSize = true;
             SignUpUsername_Label.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpUsername_Label.Location = new Point(306, 187);
+            SignUpUsername_Label.Location = new Point(268, 140);
             SignUpUsername_Label.Name = "SignUpUsername_Label";
-            SignUpUsername_Label.Size = new Size(119, 23);
+            SignUpUsername_Label.Size = new Size(94, 19);
             SignUpUsername_Label.TabIndex = 7;
             SignUpUsername_Label.Text = "USERNAME:";
             // 
             // SignUpUsername_textBox
             // 
-            SignUpUsername_textBox.Location = new Point(306, 213);
+            SignUpUsername_textBox.Location = new Point(268, 160);
+            SignUpUsername_textBox.Margin = new Padding(3, 2, 3, 2);
             SignUpUsername_textBox.Name = "SignUpUsername_textBox";
-            SignUpUsername_textBox.Size = new Size(282, 27);
+            SignUpUsername_textBox.Size = new Size(247, 23);
             SignUpUsername_textBox.TabIndex = 8;
             // 
             // SignUpCPassword_Label
             // 
             SignUpCPassword_Label.AutoSize = true;
             SignUpCPassword_Label.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpCPassword_Label.Location = new Point(306, 320);
+            SignUpCPassword_Label.Location = new Point(268, 240);
             SignUpCPassword_Label.Name = "SignUpCPassword_Label";
-            SignUpCPassword_Label.Size = new Size(223, 23);
+            SignUpCPassword_Label.Size = new Size(173, 19);
             SignUpCPassword_Label.TabIndex = 17;
             SignUpCPassword_Label.Text = "CONFIRM PASSWORD:";
             // 
             // SignUpCPassword_textBox
             // 
-            SignUpCPassword_textBox.Location = new Point(306, 346);
+            SignUpCPassword_textBox.Location = new Point(268, 260);
+            SignUpCPassword_textBox.Margin = new Padding(3, 2, 3, 2);
             SignUpCPassword_textBox.Name = "SignUpCPassword_textBox";
-            SignUpCPassword_textBox.Size = new Size(282, 27);
+            SignUpCPassword_textBox.Size = new Size(247, 23);
             SignUpCPassword_textBox.TabIndex = 16;
             // 
             // SignUpShowPassword_checkBox
             // 
             SignUpShowPassword_checkBox.AutoSize = true;
             SignUpShowPassword_checkBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpShowPassword_checkBox.Location = new Point(349, 379);
+            SignUpShowPassword_checkBox.Location = new Point(305, 284);
+            SignUpShowPassword_checkBox.Margin = new Padding(3, 2, 3, 2);
             SignUpShowPassword_checkBox.Name = "SignUpShowPassword_checkBox";
-            SignUpShowPassword_checkBox.Size = new Size(180, 32);
+            SignUpShowPassword_checkBox.Size = new Size(147, 25);
             SignUpShowPassword_checkBox.TabIndex = 15;
             SignUpShowPassword_checkBox.Text = "Show Password";
             SignUpShowPassword_checkBox.UseVisualStyleBackColor = true;
+            SignUpShowPassword_checkBox.CheckedChanged += SignUpShowPassword_checkBox_CheckedChanged;
             // 
             // SignUp_Btn
             // 
@@ -114,9 +119,10 @@
             SignUp_Btn.FlatStyle = FlatStyle.Flat;
             SignUp_Btn.Font = new Font("Lucida Sans Typewriter", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SignUp_Btn.ForeColor = Color.White;
-            SignUp_Btn.Location = new Point(365, 428);
+            SignUp_Btn.Location = new Point(319, 321);
+            SignUp_Btn.Margin = new Padding(3, 2, 3, 2);
             SignUp_Btn.Name = "SignUp_Btn";
-            SignUp_Btn.Size = new Size(145, 43);
+            SignUp_Btn.Size = new Size(127, 32);
             SignUp_Btn.TabIndex = 14;
             SignUp_Btn.Text = "SIGN UP";
             SignUp_Btn.UseVisualStyleBackColor = false;
@@ -126,26 +132,27 @@
             // 
             SignUpPassword_Label.AutoSize = true;
             SignUpPassword_Label.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpPassword_Label.Location = new Point(306, 253);
+            SignUpPassword_Label.Location = new Point(268, 190);
             SignUpPassword_Label.Name = "SignUpPassword_Label";
-            SignUpPassword_Label.Size = new Size(123, 23);
+            SignUpPassword_Label.Size = new Size(97, 19);
             SignUpPassword_Label.TabIndex = 13;
             SignUpPassword_Label.Text = "PASSWORD:";
             // 
             // SignUpPassword_textBox
             // 
-            SignUpPassword_textBox.Location = new Point(306, 279);
+            SignUpPassword_textBox.Location = new Point(268, 209);
+            SignUpPassword_textBox.Margin = new Padding(3, 2, 3, 2);
             SignUpPassword_textBox.Name = "SignUpPassword_textBox";
-            SignUpPassword_textBox.Size = new Size(282, 27);
+            SignUpPassword_textBox.Size = new Size(247, 23);
             SignUpPassword_textBox.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(574, 11);
+            label1.Location = new Point(502, 8);
             label1.Name = "label1";
-            label1.Size = new Size(209, 20);
+            label1.Size = new Size(168, 17);
             label1.TabIndex = 19;
             label1.Text = "Already have an Account?";
             // 
@@ -156,9 +163,10 @@
             SignIn_Btn.FlatStyle = FlatStyle.Flat;
             SignIn_Btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SignIn_Btn.ForeColor = Color.Transparent;
-            SignIn_Btn.Location = new Point(789, 6);
+            SignIn_Btn.Location = new Point(690, 4);
+            SignIn_Btn.Margin = new Padding(3, 2, 3, 2);
             SignIn_Btn.Name = "SignIn_Btn";
-            SignIn_Btn.Size = new Size(81, 31);
+            SignIn_Btn.Size = new Size(71, 23);
             SignIn_Btn.TabIndex = 18;
             SignIn_Btn.Text = "SIGN IN";
             SignIn_Btn.UseVisualStyleBackColor = false;
@@ -166,7 +174,7 @@
             // 
             // Registration_page
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(111, 78, 55);
             Controls.Add(label1);
@@ -181,8 +189,9 @@
             Controls.Add(SignUpUsername_Label);
             Controls.Add(SignUpPage_Label);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Registration_page";
-            Size = new Size(900, 600);
+            Size = new Size(788, 450);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

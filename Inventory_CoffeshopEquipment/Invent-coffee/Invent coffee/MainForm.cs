@@ -48,6 +48,11 @@ public partial class MainForm : Form
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Registration_page(this));
     }
+    public void ShowHomePage()
+    { 
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Home_Page(this));
+    }
 } 
 
 

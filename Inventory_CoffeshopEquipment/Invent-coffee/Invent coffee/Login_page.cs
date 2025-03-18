@@ -74,6 +74,8 @@ namespace Invent_coffee
             {
                 MessageBox.Show("Failed Login");
             }
+
+            _mainform.ShowHomePage();
         }
 
         private void RegistrationBtn_Click(object sender, EventArgs e)
