@@ -73,7 +73,7 @@ namespace Invent_coffee
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO users (username, password) VALUES (@username, @password)";
+                    string query = "INSERT INTO users (username, password) VALUES (@username, md5(@password))";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", username);

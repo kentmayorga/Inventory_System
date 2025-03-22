@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Invent_coffee.Resources;
 
 namespace Invent_coffee
 {
@@ -38,25 +39,6 @@ namespace Invent_coffee
                 Password_txtBox.PasswordChar = '*';
             }
         }
-
-        private bool AuthenticateLogin(string username, string password)
-        {
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM users WHERE username = @username AND password = @password";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
-
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
-                    return count > 0;
-                }
-            }
-        }
-
         private void Username_txtBox_TextChanged(object sender, EventArgs e)
         {
             Username_txtBox.Text = Username_txtBox.Text.ToLower();
@@ -67,16 +49,31 @@ namespace Invent_coffee
             string username = Username_txtBox.Text;
             string password = Password_txtBox.Text;
 
-            if (string.IsNullOrWhiteSpace(username)) {
-                errorProviderUsername.SetError(Username_txtBox, "This field cannot be empty!");
-            }
-            else
+            errorProviderUsername.SetError(Username_txtBox, string.IsNullOrWhiteSpace(username) ? "This field cannot be empty!" : "");
+
+            DataTable result = new DataTable();
+            using (MySqlConnection conn = new MySqlConnection(connectiondb))
             {
-                errorProviderUsername.SetError(Username_txtBox, "");
+                conn.Open();
+                string query = "SELECT * FROM users WHERE username = @username AND password = md5(@password)";
+                using (MySqlCommand cmd =  conn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    adapter.Fill(result);
+                }
+                conn.Close();
             }
 
-            if (AuthenticateLogin(username, password))
+            if (result.Rows.Count > 0)
             {
+                AppSession.id = Convert.ToInt32(result.Rows[0]["id"]);
+                AppSession.username = result.Rows[0]["username"].ToString();
+                AppSession.role = result.Rows[0]["role"].ToString();
                 ErrorMessageLabel.Visible = false;
                 MessageBox.Show("Login Successful.");
             }

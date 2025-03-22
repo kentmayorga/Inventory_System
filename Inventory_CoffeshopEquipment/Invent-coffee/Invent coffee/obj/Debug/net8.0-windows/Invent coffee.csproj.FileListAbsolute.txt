@@ -95,10 +95,13 @@ C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-co
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.csproj.AssemblyReference.cache
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Cart_Page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Home_Page.resources
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Login_page.resources
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.MainForm.resources
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Properties.Resources.resources
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Registration_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Shop_Page.resources
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.csproj.GenerateResource.cache
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.AssemblyInfoInputs.cache
@@ -111,6 +114,3 @@ C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-co
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.pdb
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\ref\Invent coffee.dll
-C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Home_Page.resources
-C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Shop_Page.resources
-C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Cart_Page.resources

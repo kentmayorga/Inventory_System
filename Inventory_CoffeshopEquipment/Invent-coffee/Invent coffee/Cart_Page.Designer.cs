@@ -31,8 +31,13 @@
             Navigations = new Panel();
             HomeButton = new Button();
             CartButton = new Button();
-            panel1 = new Panel();
+            dataGridViewCart = new DataGridView();
+            ProductQuantity = new TextBox();
+            QuantityLabel = new Label();
+            UpdateQuantityButton = new Button();
+            CheckoutButton = new Button();
             Navigations.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCart).BeginInit();
             SuspendLayout();
             // 
             // Navigations
@@ -62,6 +67,7 @@
             HomeButton.TabIndex = 8;
             HomeButton.Text = "HOME";
             HomeButton.UseVisualStyleBackColor = false;
+            HomeButton.Click += HomeButton_Click;
             // 
             // CartButton
             // 
@@ -79,23 +85,66 @@
             CartButton.Text = "CART";
             CartButton.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // dataGridViewCart
             // 
-            panel1.Location = new Point(223, 62);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(313, 328);
-            panel1.TabIndex = 3;
+            dataGridViewCart.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCart.Location = new Point(0, 40);
+            dataGridViewCart.Name = "dataGridViewCart";
+            dataGridViewCart.Size = new Size(772, 279);
+            dataGridViewCart.TabIndex = 3;
+            dataGridViewCart.CellMouseClick += dataGridViewCart_CellMouseClick;
+            // 
+            // ProductQuantity
+            // 
+            ProductQuantity.Location = new Point(12, 361);
+            ProductQuantity.Name = "ProductQuantity";
+            ProductQuantity.Size = new Size(123, 23);
+            ProductQuantity.TabIndex = 4;
+            // 
+            // QuantityLabel
+            // 
+            QuantityLabel.AutoSize = true;
+            QuantityLabel.Location = new Point(12, 343);
+            QuantityLabel.Name = "QuantityLabel";
+            QuantityLabel.Size = new Size(53, 15);
+            QuantityLabel.TabIndex = 5;
+            QuantityLabel.Text = "Quantity";
+            // 
+            // UpdateQuantityButton
+            // 
+            UpdateQuantityButton.Location = new Point(141, 359);
+            UpdateQuantityButton.Name = "UpdateQuantityButton";
+            UpdateQuantityButton.Size = new Size(100, 25);
+            UpdateQuantityButton.TabIndex = 6;
+            UpdateQuantityButton.Text = "Update";
+            UpdateQuantityButton.UseVisualStyleBackColor = true;
+            UpdateQuantityButton.Click += UpdateQuantityButton_Click;
+            // 
+            // CheckoutButton
+            // 
+            CheckoutButton.Location = new Point(657, 359);
+            CheckoutButton.Name = "CheckoutButton";
+            CheckoutButton.Size = new Size(100, 23);
+            CheckoutButton.TabIndex = 7;
+            CheckoutButton.Text = "Checkout";
+            CheckoutButton.UseVisualStyleBackColor = true;
             // 
             // Cart_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
+            Controls.Add(CheckoutButton);
+            Controls.Add(UpdateQuantityButton);
+            Controls.Add(QuantityLabel);
+            Controls.Add(ProductQuantity);
+            Controls.Add(dataGridViewCart);
             Controls.Add(Navigations);
             Name = "Cart_Page";
             Size = new Size(772, 415);
             Navigations.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCart).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -103,6 +152,10 @@
         private Panel Navigations;
         private Button HomeButton;
         private Button CartButton;
-        private Panel panel1;
+        private DataGridView dataGridViewCart;
+        private TextBox ProductQuantity;
+        private Label QuantityLabel;
+        private Button UpdateQuantityButton;
+        private Button CheckoutButton;
     }
 }

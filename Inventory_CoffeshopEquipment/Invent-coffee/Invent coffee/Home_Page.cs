@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Invent_coffee.Resources;
 
 namespace Invent_coffee
 {
@@ -17,10 +18,14 @@ namespace Invent_coffee
         {
             InitializeComponent();
             _mainform = mainform;
+            Username.Text = AppSession.username;
         }
 
         private void LogOutButton_Click(object sender, EventArgs e)
         {
+            AppSession.id = 0;
+            AppSession.username = "";
+            AppSession.role = "";
             _mainform.ShowLoginPage();
         }
 

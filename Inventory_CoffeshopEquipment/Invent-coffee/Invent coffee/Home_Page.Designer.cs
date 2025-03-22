@@ -33,6 +33,7 @@
             ShopButton = new Button();
             LogOutButton = new Button();
             pictureBox1 = new PictureBox();
+            Username = new Label();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -40,6 +41,7 @@
             // Navigations
             // 
             Navigations.BackColor = Color.FromArgb(111, 78, 55);
+            Navigations.Controls.Add(Username);
             Navigations.Controls.Add(LocationButton);
             Navigations.Controls.Add(ShopButton);
             Navigations.Controls.Add(LogOutButton);
@@ -58,7 +60,7 @@
             LocationButton.FlatStyle = FlatStyle.Flat;
             LocationButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LocationButton.ForeColor = Color.White;
-            LocationButton.Location = new Point(78, 10);
+            LocationButton.Location = new Point(65, 11);
             LocationButton.Name = "LocationButton";
             LocationButton.Size = new Size(98, 24);
             LocationButton.TabIndex = 7;
@@ -102,6 +104,16 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // Username
+            // 
+            Username.AutoSize = true;
+            Username.ForeColor = Color.White;
+            Username.Location = new Point(636, 16);
+            Username.Name = "Username";
+            Username.Size = new Size(32, 15);
+            Username.TabIndex = 8;
+            Username.Text = "label";
+            // 
             // Home_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -112,6 +124,7 @@
             Name = "Home_Page";
             Size = new Size(772, 415);
             Navigations.ResumeLayout(false);
+            Navigations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -123,5 +136,6 @@
         private PictureBox pictureBox1;
         private Button ShopButton;
         private Button LocationButton;
+        private Label Username;
     }
 }

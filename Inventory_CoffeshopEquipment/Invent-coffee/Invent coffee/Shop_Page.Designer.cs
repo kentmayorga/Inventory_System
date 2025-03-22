@@ -34,10 +34,15 @@
             LocationButton = new Button();
             ShopButton = new Button();
             LogOutButton = new Button();
-            PanelContainer = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            dataGridView1 = new DataGridView();
+            ProductName = new Label();
+            ProductDescription = new Label();
+            ProductPrice = new Label();
+            ProductQuantity = new TextBox();
+            label1 = new Label();
+            AddToCartButton = new Button();
             Navigations.SuspendLayout();
-            PanelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // Navigations
@@ -123,48 +128,86 @@
             LogOutButton.Text = "Log Out";
             LogOutButton.UseVisualStyleBackColor = true;
             // 
-            // PanelContainer
+            // dataGridView1
             // 
-            PanelContainer.AutoScroll = true;
-            PanelContainer.Controls.Add(tableLayoutPanel1);
-            PanelContainer.Location = new Point(0, 41);
-            PanelContainer.Name = "PanelContainer";
-            PanelContainer.Size = new Size(772, 374);
-            PanelContainer.TabIndex = 2;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(0, 41);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(548, 374);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellMouseClick += dataGridView1_CellMouseClick;
             // 
-            // tableLayoutPanel1
+            // ProductName
             // 
-            tableLayoutPanel1.AutoScroll = true;
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 5;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(772, 0);
-            tableLayoutPanel1.TabIndex = 3;
+            ProductName.AutoSize = true;
+            ProductName.Location = new Point(554, 58);
+            ProductName.Name = "ProductName";
+            ProductName.Size = new Size(39, 15);
+            ProductName.TabIndex = 3;
+            ProductName.Text = "Name";
+            // 
+            // ProductDescription
+            // 
+            ProductDescription.AutoSize = true;
+            ProductDescription.Location = new Point(554, 84);
+            ProductDescription.Name = "ProductDescription";
+            ProductDescription.Size = new Size(67, 15);
+            ProductDescription.TabIndex = 4;
+            ProductDescription.Text = "Description";
+            // 
+            // ProductPrice
+            // 
+            ProductPrice.AutoSize = true;
+            ProductPrice.Location = new Point(554, 114);
+            ProductPrice.Name = "ProductPrice";
+            ProductPrice.Size = new Size(33, 15);
+            ProductPrice.TabIndex = 5;
+            ProductPrice.Text = "Price";
+            // 
+            // ProductQuantity
+            // 
+            ProductQuantity.Location = new Point(554, 180);
+            ProductQuantity.Name = "ProductQuantity";
+            ProductQuantity.Size = new Size(100, 23);
+            ProductQuantity.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(554, 162);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 15);
+            label1.TabIndex = 7;
+            label1.Text = "Quantity";
+            // 
+            // AddToCartButton
+            // 
+            AddToCartButton.Location = new Point(559, 375);
+            AddToCartButton.Name = "AddToCartButton";
+            AddToCartButton.Size = new Size(200, 23);
+            AddToCartButton.TabIndex = 8;
+            AddToCartButton.Text = "Add to Cart";
+            AddToCartButton.UseVisualStyleBackColor = true;
+            AddToCartButton.Click += AddToCartButton_Click;
             // 
             // Shop_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(PanelContainer);
+            Controls.Add(AddToCartButton);
+            Controls.Add(label1);
+            Controls.Add(ProductQuantity);
+            Controls.Add(ProductPrice);
+            Controls.Add(ProductDescription);
+            Controls.Add(ProductName);
             Controls.Add(Navigations);
+            Controls.Add(dataGridView1);
             Name = "Shop_Page";
             Size = new Size(772, 415);
             Navigations.ResumeLayout(false);
-            PanelContainer.ResumeLayout(false);
-            PanelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -175,7 +218,12 @@
         private Button LogOutButton;
         private Button HomeButton;
         private Button Cart;
-        private Panel PanelContainer;
-        private TableLayoutPanel tableLayoutPanel1;
+        private DataGridView dataGridView1;
+        private Label ProductName;
+        private Label ProductDescription;
+        private Label ProductPrice;
+        private TextBox ProductQuantity;
+        private Label label1;
+        private Button AddToCartButton;
     }
 }
