@@ -12,5 +12,3 @@ namespace Invent_coffee.Resources
         public static string? username { get; set; }
         public static string? role {get; set; }
 
-    }
-}
