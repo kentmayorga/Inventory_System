@@ -114,3 +114,10 @@ C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-co
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.pdb
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\ref\Invent coffee.dll
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Cart_Page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Home_Page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Shop_Page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Admin_page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Inventory_page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Records_page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.AddProduct_page.resources

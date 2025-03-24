@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using Invent_coffee.Resources;
 using MySql.Data.MySqlClient;
 
 namespace Invent_coffee
@@ -8,7 +9,7 @@ namespace Invent_coffee
     public partial class Registration_page : UserControl
     {
         private MainForm _mainform;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private connSql conn = new connSql();   //this is an SQL connection. The file is in Resources
 
         public Registration_page(MainForm mainform)
         {
@@ -68,13 +69,13 @@ namespace Invent_coffee
                 }
             }
 
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
+            using (MySqlConnection connection = conn.connectSql())
             {
                 try
                 {
-                    conn.Open();
+                    connection.Open();
                     string query = "INSERT INTO users (username, password) VALUES (@username, md5(@password))";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
                         cmd.Parameters.AddWithValue("@password", password);
@@ -91,6 +92,7 @@ namespace Invent_coffee
                             MessageBox.Show("Failed to register user.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
+                    connection.Close();
                 }
                 catch (MySqlException ex)
                 {

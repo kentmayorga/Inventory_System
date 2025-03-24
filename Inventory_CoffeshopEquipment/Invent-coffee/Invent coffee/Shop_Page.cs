@@ -19,7 +19,7 @@ namespace Invent_coffee
     public partial class Shop_Page : UserControl
     {
         private MainForm _mainForm;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private connSql conn = new connSql(); //this is an SQL connection. The file is in Resources
         private static int productID = 0;
 
         public Shop_Page(MainForm mainform)
@@ -114,11 +114,11 @@ namespace Invent_coffee
             try
             {
                 DataTable result = new DataTable();
-                using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                using (MySqlConnection connection = conn.connectSql())
                 {
-                    conn.Open();
+                    connection.Open();
                     string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available FROM products";
-                    using (MySqlCommand cmd = conn.CreateCommand())
+                    using (MySqlCommand cmd = connection.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = query;
@@ -127,7 +127,7 @@ namespace Invent_coffee
                         adapter.Fill(result);
                         dataGridView1.DataSource = result;
                     }
-                    conn.Close();
+                    connection.Close();
                 }
             }
             catch (Exception ex)
@@ -172,11 +172,11 @@ namespace Invent_coffee
                 var productQuantity = ProductQuantity.Text;
 
                 DataTable getProduct = new DataTable();
-                using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                using (MySqlConnection connection = conn.connectSql())
                 {
-                    conn.Open();
+                    connection.Open();
                     string query = "SELECT * FROM cart WHERE product_id = @product_id AND user_id = @user_id";
-                    using (MySqlCommand cmd = conn.CreateCommand())
+                    using (MySqlCommand cmd = connection.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = query;
@@ -186,19 +186,19 @@ namespace Invent_coffee
                         MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                         adapter.Fill(getProduct);
                     }
-                    conn.Close();
+                    connection.Close();
                 }
 
                 if (getProduct.Rows.Count > 0)
                 {
                     DataTable updateCart = new DataTable();
-                    using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                    using (MySqlConnection connection = conn.connectSql())
                     {
-                        conn.Open();
+                        connection.Open();
                         string query = "UPDATE cart SET quantity = (quantity + @quantity) WHERE product_id = @product_id AND user_id = @user_id; " +
                                        "UPDATE products SET sold = (sold + @quantity) WHERE ProductID = @product_id; " +
                                        "SELECT 'Product has been added to cart.' AS message, 0 AS error;";
-                        using (MySqlCommand cmd = conn.CreateCommand())
+                        using (MySqlCommand cmd = connection.CreateCommand())
                         {
                             cmd.CommandType = CommandType.Text;
                             cmd.CommandText = query;
@@ -209,7 +209,7 @@ namespace Invent_coffee
                             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                             adapter.Fill(updateCart);
                         }
-                        conn.Close();
+                        connection.Close();
                     }
 
                     if (updateCart.Rows.Count > 0)
@@ -228,14 +228,14 @@ namespace Invent_coffee
                 else
                 {
                     DataTable result = new DataTable();
-                    using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                    using (MySqlConnection connection = conn.connectSql())
                     {
-                        conn.Open();
+                        connection.Open();
                         string query = "INSERT INTO cart (product_id, user_id, quantity) " +
                                        "VALUES (@product_id, @user_id, @quantity); " +
                                        "UPDATE products SET sold = (sold + @quantity) WHERE ProductID = @product_id; " +
                                        "SELECT 'Product has been added to cart.' AS message, 0 AS error;";
-                        using (MySqlCommand cmd = conn.CreateCommand())
+                        using (MySqlCommand cmd = connection.CreateCommand())
                         {
                             cmd.CommandType = CommandType.Text;
                             cmd.CommandText = query;
@@ -246,7 +246,7 @@ namespace Invent_coffee
                             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                             adapter.Fill(result);
                         }
-                        conn.Close();
+                        connection.Close();
                     }
 
                     if (result.Rows.Count > 0)

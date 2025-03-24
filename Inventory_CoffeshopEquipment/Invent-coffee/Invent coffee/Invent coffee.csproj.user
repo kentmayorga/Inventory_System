@@ -2,10 +2,19 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Admin_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Cart_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CRUD\AddProduct_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Home_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Inventory_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Login_page.cs">
@@ -13,6 +22,9 @@
     </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Records_page.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Registration_page.cs">
       <SubType>UserControl</SubType>

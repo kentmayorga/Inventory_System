@@ -14,7 +14,7 @@ namespace Invent_coffee
 {
     public partial class Cart_Page : UserControl
     {
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private connSql conn = new connSql();   //this is an SQL connection. The file is in Resources
         private MainForm _mainform;
         private static int productID = 0;
 
@@ -31,11 +31,11 @@ namespace Invent_coffee
             try
             {
                 DataTable result = new DataTable();
-                using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                using (MySqlConnection connection = conn.connectSql())
                 {
-                    conn.Open();
+                    connection.Open();
                     string query = "SELECT c.product_id, p.Name, p.Description, p.Price, c.quantity, c.added_at FROM cart c INNER JOIN products p ON p.ProductID = c.product_id  WHERE c.user_id = @user_id; ";
-                    using (MySqlCommand cmd = conn.CreateCommand())
+                    using (MySqlCommand cmd = connection.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = query;
@@ -45,7 +45,7 @@ namespace Invent_coffee
                         adapter.Fill(result);
                         dataGridViewCart.DataSource = result;
                     }
-                    conn.Close();
+                    connection.Close();
                 }
             }
             catch (Exception ex)
@@ -70,11 +70,11 @@ namespace Invent_coffee
             var productQuantity = ProductQuantity.Text;
 
             DataTable getProduct = new DataTable();
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
+            using (MySqlConnection connection = conn.connectSql())
             {
-                conn.Open();
+                connection.Open();
                 string query = "SELECT * FROM cart WHERE product_id = @product_id AND user_id = @user_id";
-                using (MySqlCommand cmd = conn.CreateCommand())
+                using (MySqlCommand cmd = connection.CreateCommand())
                 {
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = query;
@@ -84,7 +84,7 @@ namespace Invent_coffee
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(getProduct);
                 }
-                conn.Close();
+                connection.Close();
             }
 
             if (getProduct.Rows.Count > 0)
@@ -93,13 +93,13 @@ namespace Invent_coffee
                 DataTable updateCart = new DataTable();
                 if (Convert.ToInt32(productQuantity) > currentQuantity)
                 {
-                    using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                    using (MySqlConnection connection = conn.connectSql())
                     {
-                        conn.Open();
+                        connection.Open();
                         string query = "UPDATE cart SET quantity = @quantity WHERE product_id = @product_id AND user_id = @user_id; " +
                                         "UPDATE products SET sold = (sold + @additional_quantity) WHERE ProductID = @product_id; " +
                                         "SELECT 'Product quantity has been updated.' AS message, 0 AS error;";
-                        using (MySqlCommand cmd = conn.CreateCommand())
+                        using (MySqlCommand cmd = connection.CreateCommand())
                         {
                             cmd.CommandType = CommandType.Text;
                             cmd.CommandText = query;
@@ -111,7 +111,7 @@ namespace Invent_coffee
                             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                             adapter.Fill(updateCart);
                         }
-                        conn.Close();
+                        connection.Close();
                     }
 
                     if (updateCart.Rows.Count > 0)
@@ -129,13 +129,13 @@ namespace Invent_coffee
                 }
                 else
                 {
-                    using (MySqlConnection conn = new MySqlConnection(connectiondb))
+                    using (MySqlConnection connection = conn.connectSql())
                     {
-                        conn.Open();
+                        connection.Open();
                         string query = "UPDATE cart SET quantity = (quantity - @quantity) WHERE product_id = @product_id AND user_id = @user_id; " +
                                         "UPDATE products SET sold = (sold - @quantity) WHERE ProductID = @product_id; " +
                                         "SELECT 'Product quantity has been updated.' AS message, 0 AS error;";
-                        using (MySqlCommand cmd = conn.CreateCommand())
+                        using (MySqlCommand cmd = connection.CreateCommand())
                         {
                             cmd.CommandType = CommandType.Text;
                             cmd.CommandText = query;
@@ -146,7 +146,7 @@ namespace Invent_coffee
                             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                             adapter.Fill(updateCart);
                         }
-                        conn.Close();
+                        connection.Close();
                     }
 
                     if (updateCart.Rows.Count > 0)

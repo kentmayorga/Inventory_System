@@ -15,7 +15,7 @@ namespace Invent_coffee
     public partial class Login_page : UserControl
     {
         private MainForm _mainform;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private connSql conn = new connSql();   //this is an SQL connection. The file is in Resources
         public Login_page(MainForm mainform)
         {
             InitializeComponent();
@@ -52,11 +52,11 @@ namespace Invent_coffee
             errorProviderUsername.SetError(Username_txtBox, string.IsNullOrWhiteSpace(username) ? "This field cannot be empty!" : "");
 
             DataTable result = new DataTable();
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
+            using (MySqlConnection connection = conn.connectSql())
             {
-                conn.Open();
+                connection.Open();
                 string query = "SELECT * FROM users WHERE username = @username AND password = md5(@password)";
-                using (MySqlCommand cmd =  conn.CreateCommand())
+                using (MySqlCommand cmd = connection.CreateCommand())
                 {
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = query;
@@ -66,7 +66,7 @@ namespace Invent_coffee
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(result);
                 }
-                conn.Close();
+                connection.Close();
             }
 
             if (result.Rows.Count > 0)
@@ -84,7 +84,12 @@ namespace Invent_coffee
                 return;
             }
 
-            _mainform.ShowHomePage();
+            if(AppSession.role == "admin"){
+                _mainform.ShowAdminPage();
+            } else {
+                 _mainform.ShowHomePage();
+            }
+               
         }
 
         private void RegistrationBtn_Click(object sender, EventArgs e)

@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Invent_coffee.Resources;
+using Invent_coffee.CRUD;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +16,7 @@ namespace Invent_coffee;
 
 public partial class MainForm : Form
 {
-    private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+    private connSql conn = new connSql();
     public MainForm()
     {
         InitializeComponent();
@@ -27,11 +29,11 @@ public partial class MainForm : Form
     {
         try
         {
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
+            using (MySqlConnection connection = conn.connectSql())
             {
-                conn.Open();
+                connection.Open();
                 MessageBox.Show("Connected!");
-                conn.Close();
+                connection.Close();
             }
         }
         catch (Exception ex)
@@ -39,6 +41,10 @@ public partial class MainForm : Form
             MessageBox.Show("Connection failed: " + ex.Message);
         }
     }
+
+    /*==========================
+     Login & Registration
+     =========================*/
     public void ShowLoginPage(){
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Login_page(this));
@@ -48,6 +54,28 @@ public partial class MainForm : Form
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Registration_page(this));
     }
+    /*==========================
+     Admin
+     =========================*/
+    public void ShowAdminPage(){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Admin_page(this));
+    }
+
+    public void ShowInventoryPage()
+    {
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Inventory_page(this));
+    }
+
+    public void ShowAddProductPage(){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new AddProduct_page(this));
+    }
+
+    /*==========================
+     User
+     =========================*/
     public void ShowHomePage()
     { 
         Main_Panel.Controls.Clear();
