@@ -121,3 +121,4 @@ E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_Cof
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Inventory_page.resources
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Records_page.resources
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.AddProduct_page.resources
+E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.EditProduct_page.resources

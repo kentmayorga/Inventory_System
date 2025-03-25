@@ -11,6 +11,9 @@
     <Compile Update="CRUD\AddProduct_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CRUD\EditProduct_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Home_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>

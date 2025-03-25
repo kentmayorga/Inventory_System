@@ -73,6 +73,11 @@ public partial class MainForm : Form
         Main_Panel.Controls.Add(new AddProduct_page(this));
     }
 
+    public void ShowEditProductPage(int id){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new EditProduct_page(this, id));
+    }
+
     /*==========================
      User
      =========================*/

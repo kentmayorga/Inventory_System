@@ -30,6 +30,7 @@
         {
             Inventory_DataGridView = new DataGridView();
             AddProductBtn = new Button();
+            BackBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)Inventory_DataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -54,10 +55,21 @@
             AddProductBtn.UseVisualStyleBackColor = true;
             AddProductBtn.Click += AddProductBtn_Click;
             // 
+            // BackBtn
+            // 
+            BackBtn.Location = new Point(455, 114);
+            BackBtn.Name = "BackBtn";
+            BackBtn.Size = new Size(94, 29);
+            BackBtn.TabIndex = 2;
+            BackBtn.Text = "BACK";
+            BackBtn.UseVisualStyleBackColor = true;
+            BackBtn.Click += BackBtn_Click;
+            // 
             // Inventory_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(BackBtn);
             Controls.Add(AddProductBtn);
             Controls.Add(Inventory_DataGridView);
             Name = "Inventory_page";
@@ -70,5 +82,6 @@
 
         private DataGridView Inventory_DataGridView;
         private Button AddProductBtn;
+        private Button BackBtn;
     }
 }

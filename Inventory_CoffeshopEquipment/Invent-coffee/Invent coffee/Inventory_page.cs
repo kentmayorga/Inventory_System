@@ -89,7 +89,7 @@ public partial class Inventory_page : UserControl
 
             if (Inventory_DataGridView.Columns[e.ColumnIndex].Name == "Edit")
             {
-                MessageBox.Show("Edit");
+                _mainform.ShowEditProductPage(idno);
             }
             else if (Inventory_DataGridView.Columns[e.ColumnIndex].Name == "Remove")
             {
@@ -104,7 +104,8 @@ public partial class Inventory_page : UserControl
 
         if (result == DialogResult.Yes)
         {
-            try{
+            try
+            {
                 using MySqlConnection connecion = conn.connectSql();
 
                 connecion.Open();
@@ -145,16 +146,22 @@ public partial class Inventory_page : UserControl
                 connecion.Close();
 
                 displayData();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Error deleting product: " + ex.Message);
             }
-            
+
         }
     }
 
     private void AddProductBtn_Click(object sender, EventArgs e)
     {
         _mainform.ShowAddProductPage();
+    }
+
+    private void BackBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowAdminPage();
     }
 }

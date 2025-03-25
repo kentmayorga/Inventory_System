@@ -31,6 +31,7 @@
             InventoryBtn = new Button();
             RecordBtn = new Button();
             OrderBtn = new Button();
+            LogOutBtn = new Button();
             SuspendLayout();
             // 
             // InventoryBtn
@@ -61,10 +62,21 @@
             OrderBtn.Text = "ORDERS";
             OrderBtn.UseVisualStyleBackColor = true;
             // 
+            // LogOutBtn
+            // 
+            LogOutBtn.Location = new Point(356, 350);
+            LogOutBtn.Name = "LogOutBtn";
+            LogOutBtn.Size = new Size(127, 29);
+            LogOutBtn.TabIndex = 3;
+            LogOutBtn.Text = "LOG OUT";
+            LogOutBtn.UseVisualStyleBackColor = true;
+            LogOutBtn.Click += LogOutBtn_Click;
+            // 
             // Admin_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(LogOutBtn);
             Controls.Add(OrderBtn);
             Controls.Add(RecordBtn);
             Controls.Add(InventoryBtn);
@@ -78,5 +90,6 @@
         private Button InventoryBtn;
         private Button RecordBtn;
         private Button OrderBtn;
+        private Button LogOutBtn;
     }
 }

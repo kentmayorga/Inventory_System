@@ -24,4 +24,9 @@ public partial class Admin_page : UserControl
     {
         _mainform.ShowInventoryPage();
     }
+
+    private void LogOutBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowLoginPage();
+    }
 }
