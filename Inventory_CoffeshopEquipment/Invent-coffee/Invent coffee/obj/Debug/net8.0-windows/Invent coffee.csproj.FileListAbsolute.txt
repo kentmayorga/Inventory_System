@@ -122,3 +122,49 @@ E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_Cof
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Records_page.resources
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.AddProduct_page.resources
 E:\Acer\Documents\Coding\Projects\InventorySystem\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.EditProduct_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Invent coffee.exe
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Invent coffee.deps.json
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Invent coffee.runtimeconfig.json
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Invent coffee.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Invent coffee.pdb
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.csproj.AssemblyReference.cache
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Admin_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Cart_Page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.AddProduct_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.CRUD.EditProduct_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Home_Page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Inventory_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Login_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.MainForm.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Properties.Resources.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Records_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Registration_page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Shop_Page.resources
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.csproj.GenerateResource.cache
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.AssemblyInfoInputs.cache
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.AssemblyInfo.cs
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.csproj.CoreCompileInputs.cache
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.sourcelink.json
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent c.26F3C5AE.Up2Date
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\refint\Invent coffee.dll
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.pdb
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.genruntimeconfig.cache
+C:\Users\Ferds Rago\Desktop\Ashley\appsdevproj\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\ref\Invent coffee.dll

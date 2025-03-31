@@ -29,4 +29,19 @@ public partial class Admin_page : UserControl
     {
         _mainform.ShowLoginPage();
     }
+
+    private void OrderBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Admin_page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void RecordBtn_Click(object sender, EventArgs e)
+    {
+
+    }
 }
