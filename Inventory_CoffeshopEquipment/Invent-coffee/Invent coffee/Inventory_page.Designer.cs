@@ -28,168 +28,169 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory_page));
             Inventory_DataGridView = new DataGridView();
             AddProductBtn = new Button();
-            BackBtn = new Button();
-            button1 = new Button();
-            Searchbar = new TextBox();
+            Searchbar_textbox = new TextBox();
             SearchBtn = new Button();
-            button2 = new Button();
-            InputProductName = new TextBox();
-            textBox2 = new TextBox();
-            InputPrice = new TextBox();
-            InputQuantity = new TextBox();
-            pictureBox2 = new PictureBox();
+            FilterBtn = new Button();
+            BackBtn = new Button();
+            ProductNameTableHeader = new Label();
+            ProductPriceTableHeader = new Label();
+            ProductStockTableHeader = new Label();
+            ProductSoldTableHeader = new Label();
             ((System.ComponentModel.ISupportInitialize)Inventory_DataGridView).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // Inventory_DataGridView
             // 
-            Inventory_DataGridView.Anchor = AnchorStyles.Bottom;
+            Inventory_DataGridView.Anchor = AnchorStyles.None;
+            Inventory_DataGridView.BackgroundColor = SystemColors.GrayText;
+            Inventory_DataGridView.BorderStyle = BorderStyle.None;
             Inventory_DataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Inventory_DataGridView.Location = new Point(238, 116);
-            Inventory_DataGridView.Margin = new Padding(3, 2, 3, 2);
+            Inventory_DataGridView.Location = new Point(10, 85);
             Inventory_DataGridView.Name = "Inventory_DataGridView";
             Inventory_DataGridView.RowHeadersWidth = 51;
-            Inventory_DataGridView.Size = new Size(534, 315);
+            Inventory_DataGridView.ScrollBars = ScrollBars.Vertical;
+            Inventory_DataGridView.Size = new Size(860, 454);
             Inventory_DataGridView.TabIndex = 0;
             Inventory_DataGridView.CellContentClick += Inventory_DataGridView_CellContentClick;
             // 
             // AddProductBtn
             // 
-            AddProductBtn.BackColor = SystemColors.ActiveBorder;
-            AddProductBtn.Location = new Point(22, 341);
-            AddProductBtn.Margin = new Padding(3, 2, 3, 2);
+            AddProductBtn.BackColor = Color.SaddleBrown;
+            AddProductBtn.FlatAppearance.BorderSize = 0;
+            AddProductBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            AddProductBtn.FlatStyle = FlatStyle.Flat;
+            AddProductBtn.Font = new Font("Century", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddProductBtn.Image = (Image)resources.GetObject("AddProductBtn.Image");
+            AddProductBtn.Location = new Point(3, 11);
             AddProductBtn.Name = "AddProductBtn";
-            AddProductBtn.Size = new Size(82, 22);
+            AddProductBtn.Size = new Size(51, 40);
             AddProductBtn.TabIndex = 1;
-            AddProductBtn.Text = "ADD";
             AddProductBtn.UseVisualStyleBackColor = false;
             AddProductBtn.Click += AddProductBtn_Click;
             // 
-            // BackBtn
+            // Searchbar_textbox
             // 
-            BackBtn.BackColor = SystemColors.ActiveBorder;
-            BackBtn.Location = new Point(132, 341);
-            BackBtn.Margin = new Padding(3, 2, 3, 2);
-            BackBtn.Name = "BackBtn";
-            BackBtn.Size = new Size(82, 22);
-            BackBtn.TabIndex = 2;
-            BackBtn.Text = "BACK";
-            BackBtn.UseVisualStyleBackColor = false;
-            BackBtn.Click += BackBtn_Click;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.icons8_home_30;
-            button1.Location = new Point(9, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(47, 42);
-            button1.TabIndex = 3;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // Searchbar
-            // 
-            Searchbar.BackColor = SystemColors.ActiveBorder;
-            Searchbar.Location = new Point(238, 13);
-            Searchbar.Name = "Searchbar";
-            Searchbar.Size = new Size(275, 23);
-            Searchbar.TabIndex = 4;
+            Searchbar_textbox.BackColor = SystemColors.Control;
+            Searchbar_textbox.Location = new Point(258, 18);
+            Searchbar_textbox.Margin = new Padding(3, 4, 3, 4);
+            Searchbar_textbox.Name = "Searchbar_textbox";
+            Searchbar_textbox.Size = new Size(328, 27);
+            Searchbar_textbox.TabIndex = 4;
+            Searchbar_textbox.Enter += SearchBtn_Click;
             // 
             // SearchBtn
             // 
-            SearchBtn.BackColor = SystemColors.ActiveBorder;
+            SearchBtn.BackColor = Color.SaddleBrown;
+            SearchBtn.FlatAppearance.BorderSize = 0;
+            SearchBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            SearchBtn.FlatStyle = FlatStyle.Flat;
             SearchBtn.Font = new Font("Century", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SearchBtn.Location = new Point(524, 12);
+            SearchBtn.ForeColor = SystemColors.ButtonHighlight;
+            SearchBtn.Location = new Point(592, 15);
+            SearchBtn.Margin = new Padding(3, 4, 3, 4);
             SearchBtn.Name = "SearchBtn";
-            SearchBtn.Size = new Size(75, 24);
+            SearchBtn.Size = new Size(97, 32);
             SearchBtn.TabIndex = 5;
             SearchBtn.Text = "Search";
             SearchBtn.UseVisualStyleBackColor = false;
+            SearchBtn.Click += SearchBtn_Click;
             // 
-            // button2
+            // FilterBtn
             // 
-            button2.BackColor = SystemColors.ActiveBorder;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(645, 72);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 30);
-            button2.TabIndex = 6;
-            button2.Text = "Sort by Price";
-            button2.UseVisualStyleBackColor = false;
+            FilterBtn.BackColor = Color.SaddleBrown;
+            FilterBtn.FlatAppearance.BorderSize = 0;
+            FilterBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            FilterBtn.FlatStyle = FlatStyle.Flat;
+            FilterBtn.Font = new Font("Century", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FilterBtn.Image = (Image)resources.GetObject("FilterBtn.Image");
+            FilterBtn.Location = new Point(60, 12);
+            FilterBtn.Margin = new Padding(3, 4, 3, 4);
+            FilterBtn.Name = "FilterBtn";
+            FilterBtn.Size = new Size(46, 35);
+            FilterBtn.TabIndex = 6;
+            FilterBtn.UseVisualStyleBackColor = false;
+            FilterBtn.Click += FilterBtn_Click;
             // 
-            // InputProductName
+            // BackBtn
             // 
-            InputProductName.BackColor = SystemColors.ActiveBorder;
-            InputProductName.Location = new Point(9, 175);
-            InputProductName.Name = "InputProductName";
-            InputProductName.Size = new Size(223, 23);
-            InputProductName.TabIndex = 7;
-            InputProductName.Text = "Product name:";
+            BackBtn.BackColor = Color.SaddleBrown;
+            BackBtn.Cursor = Cursors.Hand;
+            BackBtn.FlatAppearance.BorderSize = 0;
+            BackBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            BackBtn.FlatStyle = FlatStyle.Flat;
+            BackBtn.Image = (Image)resources.GetObject("BackBtn.Image");
+            BackBtn.Location = new Point(818, 5);
+            BackBtn.Name = "BackBtn";
+            BackBtn.Size = new Size(61, 44);
+            BackBtn.TabIndex = 2;
+            BackBtn.UseVisualStyleBackColor = true;
+            BackBtn.Click += BackBtn_Click;
             // 
-            // textBox2
+            // ProductNameTableHeader
             // 
-            textBox2.BackColor = SystemColors.ActiveBorder;
-            textBox2.Location = new Point(50, 126);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(140, 23);
-            textBox2.TabIndex = 8;
-            textBox2.Text = "Create new product here";
+            ProductNameTableHeader.AutoSize = true;
+            ProductNameTableHeader.Font = new Font("Century", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ProductNameTableHeader.ForeColor = SystemColors.ControlLightLight;
+            ProductNameTableHeader.Location = new Point(10, 60);
+            ProductNameTableHeader.Name = "ProductNameTableHeader";
+            ProductNameTableHeader.Size = new Size(65, 22);
+            ProductNameTableHeader.TabIndex = 7;
+            ProductNameTableHeader.Text = "Name:";
             // 
-            // InputPrice
+            // ProductPriceTableHeader
             // 
-            InputPrice.BackColor = SystemColors.ActiveBorder;
-            InputPrice.Location = new Point(9, 226);
-            InputPrice.Name = "InputPrice";
-            InputPrice.Size = new Size(223, 23);
-            InputPrice.TabIndex = 9;
-            InputPrice.Text = "Price:";
+            ProductPriceTableHeader.AutoSize = true;
+            ProductPriceTableHeader.Font = new Font("Century", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ProductPriceTableHeader.ForeColor = SystemColors.ControlLightLight;
+            ProductPriceTableHeader.Location = new Point(201, 60);
+            ProductPriceTableHeader.Name = "ProductPriceTableHeader";
+            ProductPriceTableHeader.Size = new Size(58, 22);
+            ProductPriceTableHeader.TabIndex = 8;
+            ProductPriceTableHeader.Text = "Price:";
             // 
-            // InputQuantity
+            // ProductStockTableHeader
             // 
-            InputQuantity.BackColor = SystemColors.ActiveBorder;
-            InputQuantity.Location = new Point(9, 276);
-            InputQuantity.Name = "InputQuantity";
-            InputQuantity.Size = new Size(223, 23);
-            InputQuantity.TabIndex = 10;
-            InputQuantity.Text = "Quantity:";
+            ProductStockTableHeader.AutoSize = true;
+            ProductStockTableHeader.Font = new Font("Century", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ProductStockTableHeader.ForeColor = SystemColors.ControlLightLight;
+            ProductStockTableHeader.Location = new Point(383, 60);
+            ProductStockTableHeader.Name = "ProductStockTableHeader";
+            ProductStockTableHeader.Size = new Size(61, 22);
+            ProductStockTableHeader.TabIndex = 9;
+            ProductStockTableHeader.Text = "Stock:";
             // 
-            // pictureBox2
+            // ProductSoldTableHeader
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = Properties.Resources.icons8_coffee_24;
-            pictureBox2.Location = new Point(206, 13);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(26, 25);
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
+            ProductSoldTableHeader.AutoSize = true;
+            ProductSoldTableHeader.Font = new Font("Century", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ProductSoldTableHeader.ForeColor = SystemColors.ControlLightLight;
+            ProductSoldTableHeader.Location = new Point(566, 60);
+            ProductSoldTableHeader.Name = "ProductSoldTableHeader";
+            ProductSoldTableHeader.Size = new Size(51, 22);
+            ProductSoldTableHeader.TabIndex = 10;
+            ProductSoldTableHeader.Text = "Sold:";
             // 
             // Inventory_page
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SaddleBrown;
-            Controls.Add(pictureBox2);
-            Controls.Add(InputQuantity);
-            Controls.Add(InputPrice);
-            Controls.Add(textBox2);
-            Controls.Add(InputProductName);
-            Controls.Add(button2);
+            Controls.Add(ProductSoldTableHeader);
+            Controls.Add(ProductStockTableHeader);
+            Controls.Add(ProductPriceTableHeader);
+            Controls.Add(ProductNameTableHeader);
+            Controls.Add(FilterBtn);
             Controls.Add(SearchBtn);
-            Controls.Add(Searchbar);
-            Controls.Add(button1);
+            Controls.Add(Searchbar_textbox);
             Controls.Add(BackBtn);
             Controls.Add(AddProductBtn);
             Controls.Add(Inventory_DataGridView);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Inventory_page";
-            Size = new Size(772, 422);
+            Size = new Size(882, 553);
             ((System.ComponentModel.ISupportInitialize)Inventory_DataGridView).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -198,15 +199,13 @@
 
         private DataGridView Inventory_DataGridView;
         private Button AddProductBtn;
-        private Button BackBtn;
-        private Button button1;
-        private TextBox Searchbar;
+        private TextBox Searchbar_textbox;
         private Button SearchBtn;
-        private Button button2;
-        private TextBox InputProductName;
-        private TextBox textBox2;
-        private TextBox InputPrice;
-        private TextBox InputQuantity;
-        private PictureBox pictureBox2;
+        private Button FilterBtn;
+        private Button BackBtn;
+        private Label ProductNameTableHeader;
+        private Label ProductPriceTableHeader;
+        private Label ProductStockTableHeader;
+        private Label ProductSoldTableHeader;
     }
 }

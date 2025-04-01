@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Invent_coffee.Resources;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
+using System.DirectoryServices.ActiveDirectory;
 
 namespace Invent_coffee;
 
@@ -17,11 +18,36 @@ public partial class Inventory_page : UserControl
 {
     private connSql conn = new connSql();
     private MainForm _mainform;
+    private ContextMenuStrip filterMenu;
+    private string selectedFilter = "All";
     public Inventory_page(MainForm mainform)
     {
         InitializeComponent();
+        InitializeFilterButton();
         _mainform = mainform;
         displayData();
+    }
+
+    private void InitializeFilterButton()
+    {
+        // Create the dropdown menu
+        filterMenu = new ContextMenuStrip();
+        filterMenu.Items.Add("All", null, Filter_Click); 
+        filterMenu.Items.Add("Ascending", null, Filter_Click);
+        filterMenu.Items.Add("Decending", null, Filter_Click);
+        filterMenu.Items.Add("Highest Price", null, Filter_Click);
+        filterMenu.Items.Add("Lowest Price", null, Filter_Click);
+        filterMenu.Items.Add("Highest Sold", null, Filter_Click);
+        filterMenu.Items.Add("Lowest Sold", null, Filter_Click);
+        filterMenu.Items.Add("Available Stock", null, Filter_Click);
+        filterMenu.Items.Add("Out of Stock", null, Filter_Click);
+    }
+
+    private void Filter_Click(object? sender, EventArgs e)
+    {
+        selectedFilter = ((ToolStripMenuItem)sender).Text;
+        Searchbar_textbox.Text = "";
+        displayData(); // Refresh the table with the selected filter
     }
 
     //Displays the inventory in table
@@ -33,7 +59,43 @@ public partial class Inventory_page : UserControl
             connection.Open();
             Console.WriteLine("Connecting to database...");
 
-            string query = "SELECT ProductID,Name, Price, Stock, sold FROM products;";
+            string query = "SELECT ProductID, Name, Price, Stock, Sold FROM products";
+
+            // Modify query based on the selected filter
+            switch (selectedFilter)
+            {
+                case "Ascending":
+                    query += " ORDER BY name ASC";
+                    break;
+                case "Decending":
+                    query += " ORDER BY name DESC";
+                    break;
+                case "Highest Price":
+                    query += " ORDER BY Price DESC";
+                    break;
+                case "Lowest Price":
+                    query += " ORDER BY Price ASC";
+                    break;
+                case "Highest Sold":
+                    query += " ORDER BY Sold DESC";
+                    break;
+                case "Lowest Sold":
+                    query += " ORDER BY Sold ASC";
+                    break;
+                case "Available Stock":
+                    query += " WHERE Stock > 0";
+                    break;
+                case "Out of Stock":
+                    query += " WHERE Stock = 0";
+                    break;
+                
+            }
+
+            // Apply search filter
+            if (!string.IsNullOrWhiteSpace(Searchbar_textbox.Text))
+            {
+                query += $" WHERE Name LIKE '%{Searchbar_textbox.Text}%'";
+            }
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
             DataTable dt = new DataTable();
@@ -41,9 +103,12 @@ public partial class Inventory_page : UserControl
             adapter.Fill(dt);
 
             Inventory_DataGridView.DataSource = dt;
-
             Inventory_DataGridView.AllowUserToAddRows = false;
             Inventory_DataGridView.Columns["ProductID"].Visible = false;
+            Inventory_DataGridView.RowHeadersVisible = false;
+            Inventory_DataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Inventory_DataGridView.ColumnHeadersVisible = false;
+
 
             if (Inventory_DataGridView.Columns["Edit"] == null)
             {
@@ -163,5 +228,15 @@ public partial class Inventory_page : UserControl
     private void BackBtn_Click(object sender, EventArgs e)
     {
         _mainform.ShowAdminPage();
+    }
+
+    private void FilterBtn_Click(object sender, EventArgs e)
+    {
+        filterMenu.Show((Control)sender, new Point(0, ((Control)sender).Height));
+    }
+
+    private void SearchBtn_Click(object sender, EventArgs e)
+    {
+        displayData();
     }
 }

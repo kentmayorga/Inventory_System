@@ -18,21 +18,7 @@ public partial class Admin_page : UserControl
     {
         InitializeComponent();
         _mainform = mainform;
-    }
-
-    private void InventoryBtn_Click(object sender, EventArgs e)
-    {
-        _mainform.ShowInventoryPage();
-    }
-
-    private void LogOutBtn_Click(object sender, EventArgs e)
-    {
-        _mainform.ShowLoginPage();
-    }
-
-    private void OrderBtn_Click(object sender, EventArgs e)
-    {
-
+        MenuPanel.Hide();
     }
 
     private void Admin_page_Load(object sender, EventArgs e)
@@ -40,8 +26,80 @@ public partial class Admin_page : UserControl
 
     }
 
+    /*
+        OPEN Navigation bar
+     */
+    private void ProfileBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void InventoryBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowInventoryPage();
+    }
+
+    private void OrderBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
     private void RecordBtn_Click(object sender, EventArgs e)
     {
 
+    }
+
+    private void AccountBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void LogOutBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowLoginPage();
+    }
+    private void NavBarBtn_Click(object sender, EventArgs e)
+    {
+        MenuPanel.Hide();
+        MiniMenuPanel.Show();
+    }
+
+    /*
+        CLOSE Navigation Bar
+     */
+    private void MiniNavBarProfileBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MiniNavBarInventoryBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowInventoryPage();
+    }
+
+    private void MiniNavBarOrderBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MiniNavBarRecordBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MiniNavBarAccountBtn_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void MiniNavLogOutBtn_Click(object sender, EventArgs e)
+    {
+        _mainform.ShowLoginPage();
+    }
+
+    private void MenuBarBtn_Click(object sender, EventArgs e)
+    {
+        MenuPanel.Show();
+        MiniMenuPanel.Hide();
     }
 }

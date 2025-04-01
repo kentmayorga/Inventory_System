@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
+    "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {
+    "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "projectUniqueName": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
         "projectName": "Invent coffee",
-        "projectPath": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
-        "packagesPath": "C:\\Users\\Ferds Rago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
+        "projectPath": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "packagesPath": "C:\\Users\\Ramirez\\.nuget\\packages\\",
+        "outputPath": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ferds Rago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ramirez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

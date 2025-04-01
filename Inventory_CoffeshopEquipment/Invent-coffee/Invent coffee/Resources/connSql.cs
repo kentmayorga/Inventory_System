@@ -16,7 +16,7 @@ class connSql
     public MySqlConnection connectSql()
     {
         try{
-            connSqlString = "server=localhost;database=inventory_system;user=Ashley;pwd=ashleyrago18;";
+            connSqlString = "server=localhost;database=trialdb;user=root;pwd=Matero#92002;";
 
             conn = new MySqlConnection(connSqlString);
 
