@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Invent_coffee.Resources;
 using MySql.Data.MySqlClient;
 
 namespace Invent_coffee;
@@ -14,26 +6,26 @@ namespace Invent_coffee;
 public partial class Admin_page : UserControl
 {
     private MainForm _mainform;
+    private connSql conn = new connSql();
     public Admin_page(MainForm mainform)
     {
         InitializeComponent();
         _mainform = mainform;
+        UserRoleLabel.Text = "           "+AppSession.role.ToUpper();
         MenuPanel.Hide();
     }
 
-    private void Admin_page_Load(object sender, EventArgs e)
-    {
+    public void salesData(){
+        using MySqlConnection connection = conn.connectSql();
+        connection.Open();
+        Console.WriteLine("Connecting to database...");
 
+        string query = "";
     }
 
     /*
         OPEN Navigation bar
      */
-    private void ProfileBtn_Click(object sender, EventArgs e)
-    {
-
-    }
-
     private void InventoryBtn_Click(object sender, EventArgs e)
     {
         _mainform.ShowInventoryPage();
@@ -67,10 +59,6 @@ public partial class Admin_page : UserControl
     /*
         CLOSE Navigation Bar
      */
-    private void MiniNavBarProfileBtn_Click(object sender, EventArgs e)
-    {
-
-    }
 
     private void MiniNavBarInventoryBtn_Click(object sender, EventArgs e)
     {

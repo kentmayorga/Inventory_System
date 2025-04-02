@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_page));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             InventoryBtn = new Button();
             RecordBtn = new Button();
             OrderBtn = new Button();
@@ -37,8 +38,7 @@
             NavBarBtn = new Button();
             ShopMIcon = new PictureBox();
             AccountBtn = new Button();
-            label1 = new Label();
-            ProfileBtn = new Button();
+            MenuTitleLabel = new Label();
             MiniMenuPanel = new Panel();
             MiniNavLogOutBtn = new Button();
             MenuBarBtn = new Button();
@@ -46,12 +46,17 @@
             MiniNavBarRecordBtn = new Button();
             MiniNavBarOrderBtn = new Button();
             MiniNavBarInventoryBtn = new Button();
-            MiniNavBarProfileBtn = new Button();
             ShopIcon_PictureBox = new PictureBox();
+            GreetingLabel = new Label();
+            UserRoleLabel = new Label();
+            Stocks_dataGridView = new DataGridView();
+            Sales_dataGridView = new DataGridView();
             MenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ShopMIcon).BeginInit();
             MiniMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ShopIcon_PictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Stocks_dataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Sales_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // InventoryBtn
@@ -64,10 +69,10 @@
             InventoryBtn.ForeColor = SystemColors.ButtonHighlight;
             InventoryBtn.Image = Properties.Resources.icons8_trolley_32;
             InventoryBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            InventoryBtn.Location = new Point(1, 125);
+            InventoryBtn.Location = new Point(1, 77);
             InventoryBtn.Margin = new Padding(0);
             InventoryBtn.Name = "InventoryBtn";
-            InventoryBtn.Size = new Size(173, 75);
+            InventoryBtn.Size = new Size(173, 59);
             InventoryBtn.TabIndex = 0;
             InventoryBtn.Text = "INVENTORY";
             InventoryBtn.TextAlign = ContentAlignment.MiddleRight;
@@ -84,9 +89,9 @@
             RecordBtn.ForeColor = SystemColors.ButtonHighlight;
             RecordBtn.Image = Properties.Resources.icons8_list_view_26;
             RecordBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            RecordBtn.Location = new Point(0, 271);
+            RecordBtn.Location = new Point(0, 195);
             RecordBtn.Name = "RecordBtn";
-            RecordBtn.Size = new Size(174, 75);
+            RecordBtn.Size = new Size(173, 59);
             RecordBtn.TabIndex = 1;
             RecordBtn.Text = "RECORDS";
             RecordBtn.UseVisualStyleBackColor = false;
@@ -102,9 +107,9 @@
             OrderBtn.ForeColor = SystemColors.ControlLightLight;
             OrderBtn.Image = Properties.Resources.icons8_product_26;
             OrderBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            OrderBtn.Location = new Point(1, 200);
+            OrderBtn.Location = new Point(1, 136);
             OrderBtn.Name = "OrderBtn";
-            OrderBtn.Size = new Size(173, 75);
+            OrderBtn.Size = new Size(173, 59);
             OrderBtn.TabIndex = 2;
             OrderBtn.Text = "ORDERS";
             OrderBtn.UseVisualStyleBackColor = false;
@@ -135,12 +140,12 @@
             MenuPanel.Controls.Add(NavBarBtn);
             MenuPanel.Controls.Add(ShopMIcon);
             MenuPanel.Controls.Add(AccountBtn);
-            MenuPanel.Controls.Add(label1);
-            MenuPanel.Controls.Add(ProfileBtn);
+            MenuPanel.Controls.Add(MenuTitleLabel);
             MenuPanel.Controls.Add(InventoryBtn);
             MenuPanel.Controls.Add(RecordBtn);
             MenuPanel.Controls.Add(LogOutBtn);
             MenuPanel.Controls.Add(OrderBtn);
+            MenuPanel.Dock = DockStyle.Left;
             MenuPanel.Font = new Font("Century", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MenuPanel.Location = new Point(0, 0);
             MenuPanel.Margin = new Padding(3, 4, 3, 4);
@@ -183,43 +188,24 @@
             AccountBtn.ForeColor = SystemColors.ButtonHighlight;
             AccountBtn.Image = (Image)resources.GetObject("AccountBtn.Image");
             AccountBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            AccountBtn.Location = new Point(0, 344);
+            AccountBtn.Location = new Point(0, 254);
             AccountBtn.Name = "AccountBtn";
-            AccountBtn.Size = new Size(174, 75);
+            AccountBtn.Size = new Size(173, 59);
             AccountBtn.TabIndex = 6;
             AccountBtn.Text = "ACCOUNTS";
             AccountBtn.TextAlign = ContentAlignment.MiddleRight;
             AccountBtn.UseVisualStyleBackColor = false;
             AccountBtn.Click += AccountBtn_Click;
             // 
-            // label1
+            // MenuTitleLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(56, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 33);
-            label1.TabIndex = 5;
-            label1.Text = "MENU";
-            // 
-            // ProfileBtn
-            // 
-            ProfileBtn.BackColor = Color.Transparent;
-            ProfileBtn.FlatAppearance.BorderSize = 0;
-            ProfileBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
-            ProfileBtn.FlatStyle = FlatStyle.Flat;
-            ProfileBtn.Font = new Font("Century", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ProfileBtn.ForeColor = SystemColors.Window;
-            ProfileBtn.Image = (Image)resources.GetObject("ProfileBtn.Image");
-            ProfileBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            ProfileBtn.Location = new Point(0, 52);
-            ProfileBtn.Margin = new Padding(3, 4, 3, 4);
-            ProfileBtn.Name = "ProfileBtn";
-            ProfileBtn.Size = new Size(174, 75);
-            ProfileBtn.TabIndex = 4;
-            ProfileBtn.Text = "PROFILE";
-            ProfileBtn.UseVisualStyleBackColor = false;
-            ProfileBtn.Click += ProfileBtn_Click;
+            MenuTitleLabel.AutoSize = true;
+            MenuTitleLabel.Font = new Font("Century", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            MenuTitleLabel.Location = new Point(56, 11);
+            MenuTitleLabel.Name = "MenuTitleLabel";
+            MenuTitleLabel.Size = new Size(111, 33);
+            MenuTitleLabel.TabIndex = 5;
+            MenuTitleLabel.Text = "MENU";
             // 
             // MiniMenuPanel
             // 
@@ -230,9 +216,9 @@
             MiniMenuPanel.Controls.Add(MiniNavBarRecordBtn);
             MiniMenuPanel.Controls.Add(MiniNavBarOrderBtn);
             MiniMenuPanel.Controls.Add(MiniNavBarInventoryBtn);
-            MiniMenuPanel.Controls.Add(MiniNavBarProfileBtn);
             MiniMenuPanel.Controls.Add(ShopIcon_PictureBox);
-            MiniMenuPanel.Location = new Point(0, 1);
+            MiniMenuPanel.Dock = DockStyle.Left;
+            MiniMenuPanel.Location = new Point(175, 0);
             MiniMenuPanel.Name = "MiniMenuPanel";
             MiniMenuPanel.Size = new Size(62, 553);
             MiniMenuPanel.TabIndex = 6;
@@ -269,7 +255,7 @@
             MiniNavBarAccountBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             MiniNavBarAccountBtn.FlatStyle = FlatStyle.Flat;
             MiniNavBarAccountBtn.Image = (Image)resources.GetObject("MiniNavBarAccountBtn.Image");
-            MiniNavBarAccountBtn.Location = new Point(0, 310);
+            MiniNavBarAccountBtn.Location = new Point(0, 261);
             MiniNavBarAccountBtn.Name = "MiniNavBarAccountBtn";
             MiniNavBarAccountBtn.Size = new Size(61, 44);
             MiniNavBarAccountBtn.TabIndex = 8;
@@ -282,7 +268,7 @@
             MiniNavBarRecordBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             MiniNavBarRecordBtn.FlatStyle = FlatStyle.Flat;
             MiniNavBarRecordBtn.Image = (Image)resources.GetObject("MiniNavBarRecordBtn.Image");
-            MiniNavBarRecordBtn.Location = new Point(1, 260);
+            MiniNavBarRecordBtn.Location = new Point(1, 202);
             MiniNavBarRecordBtn.Name = "MiniNavBarRecordBtn";
             MiniNavBarRecordBtn.Size = new Size(61, 44);
             MiniNavBarRecordBtn.TabIndex = 7;
@@ -295,7 +281,7 @@
             MiniNavBarOrderBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             MiniNavBarOrderBtn.FlatStyle = FlatStyle.Flat;
             MiniNavBarOrderBtn.Image = (Image)resources.GetObject("MiniNavBarOrderBtn.Image");
-            MiniNavBarOrderBtn.Location = new Point(-1, 203);
+            MiniNavBarOrderBtn.Location = new Point(-1, 143);
             MiniNavBarOrderBtn.Name = "MiniNavBarOrderBtn";
             MiniNavBarOrderBtn.Size = new Size(61, 44);
             MiniNavBarOrderBtn.TabIndex = 6;
@@ -308,25 +294,12 @@
             MiniNavBarInventoryBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             MiniNavBarInventoryBtn.FlatStyle = FlatStyle.Flat;
             MiniNavBarInventoryBtn.Image = (Image)resources.GetObject("MiniNavBarInventoryBtn.Image");
-            MiniNavBarInventoryBtn.Location = new Point(0, 142);
+            MiniNavBarInventoryBtn.Location = new Point(0, 87);
             MiniNavBarInventoryBtn.Name = "MiniNavBarInventoryBtn";
             MiniNavBarInventoryBtn.Size = new Size(61, 44);
             MiniNavBarInventoryBtn.TabIndex = 5;
             MiniNavBarInventoryBtn.UseVisualStyleBackColor = true;
             MiniNavBarInventoryBtn.Click += MiniNavBarInventoryBtn_Click;
-            // 
-            // MiniNavBarProfileBtn
-            // 
-            MiniNavBarProfileBtn.FlatAppearance.BorderSize = 0;
-            MiniNavBarProfileBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
-            MiniNavBarProfileBtn.FlatStyle = FlatStyle.Flat;
-            MiniNavBarProfileBtn.Image = (Image)resources.GetObject("MiniNavBarProfileBtn.Image");
-            MiniNavBarProfileBtn.Location = new Point(1, 82);
-            MiniNavBarProfileBtn.Name = "MiniNavBarProfileBtn";
-            MiniNavBarProfileBtn.Size = new Size(58, 44);
-            MiniNavBarProfileBtn.TabIndex = 4;
-            MiniNavBarProfileBtn.UseVisualStyleBackColor = true;
-            MiniNavBarProfileBtn.Click += MiniNavBarProfileBtn_Click;
             // 
             // ShopIcon_PictureBox
             // 
@@ -341,6 +314,56 @@
             ShopIcon_PictureBox.TabIndex = 3;
             ShopIcon_PictureBox.TabStop = false;
             // 
+            // GreetingLabel
+            // 
+            GreetingLabel.AllowDrop = true;
+            GreetingLabel.AutoEllipsis = true;
+            GreetingLabel.AutoSize = true;
+            GreetingLabel.BackColor = Color.Transparent;
+            GreetingLabel.Dock = DockStyle.Top;
+            GreetingLabel.Font = new Font("Century", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            GreetingLabel.ForeColor = SystemColors.ControlLightLight;
+            GreetingLabel.Location = new Point(237, 0);
+            GreetingLabel.Name = "GreetingLabel";
+            GreetingLabel.Size = new Size(175, 40);
+            GreetingLabel.TabIndex = 8;
+            GreetingLabel.Text = "Welcome!";
+            // 
+            // UserRoleLabel
+            // 
+            UserRoleLabel.AutoSize = true;
+            UserRoleLabel.BackColor = Color.Transparent;
+            UserRoleLabel.Dock = DockStyle.Top;
+            UserRoleLabel.Font = new Font("Century", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            UserRoleLabel.ForeColor = SystemColors.ControlLightLight;
+            UserRoleLabel.Location = new Point(237, 40);
+            UserRoleLabel.Name = "UserRoleLabel";
+            UserRoleLabel.Size = new Size(171, 40);
+            UserRoleLabel.TabIndex = 7;
+            UserRoleLabel.Text = "UserRole";
+            // 
+            // Stocks_dataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            Stocks_dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            Stocks_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Stocks_dataGridView.Dock = DockStyle.Bottom;
+            Stocks_dataGridView.Location = new Point(237, 328);
+            Stocks_dataGridView.Name = "Stocks_dataGridView";
+            Stocks_dataGridView.RowHeadersWidth = 51;
+            Stocks_dataGridView.Size = new Size(645, 225);
+            Stocks_dataGridView.TabIndex = 9;
+            // 
+            // Sales_dataGridView
+            // 
+            Sales_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Sales_dataGridView.Dock = DockStyle.Bottom;
+            Sales_dataGridView.Location = new Point(237, 101);
+            Sales_dataGridView.Name = "Sales_dataGridView";
+            Sales_dataGridView.RowHeadersWidth = 51;
+            Sales_dataGridView.Size = new Size(645, 227);
+            Sales_dataGridView.TabIndex = 10;
+            // 
             // Admin_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -348,17 +371,23 @@
             BackColor = Color.LightGray;
             BackgroundImage = Properties.Resources.admin_dash;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(Sales_dataGridView);
+            Controls.Add(Stocks_dataGridView);
+            Controls.Add(UserRoleLabel);
+            Controls.Add(GreetingLabel);
             Controls.Add(MiniMenuPanel);
             Controls.Add(MenuPanel);
             Name = "Admin_page";
             Size = new Size(882, 553);
-            Load += Admin_page_Load;
             MenuPanel.ResumeLayout(false);
             MenuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ShopMIcon).EndInit();
             MiniMenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ShopIcon_PictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Stocks_dataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Sales_dataGridView).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -368,19 +397,21 @@
         private Button OrderBtn;
         private Button LogOutBtn;
         private Panel MenuPanel;
-        private Button ProfileBtn;
         private Panel MiniMenuPanel;
-        private Label label1;
+        private Label MenuTitleLabel;
         private PictureBox ShopIcon_PictureBox;
         private Button AccountBtn;
         private PictureBox ShopMIcon;
         private Button MiniNavBarInventoryBtn;
-        private Button MiniNavBarProfileBtn;
         private Button NavBarBtn;
         private Button MiniNavLogOutBtn;
         private Button MenuBarBtn;
         private Button MiniNavBarAccountBtn;
         private Button MiniNavBarRecordBtn;
         private Button MiniNavBarOrderBtn;
+        private Label GreetingLabel;
+        private Label UserRoleLabel;
+        private DataGridView Stocks_dataGridView;
+        private DataGridView Sales_dataGridView;
     }
 }

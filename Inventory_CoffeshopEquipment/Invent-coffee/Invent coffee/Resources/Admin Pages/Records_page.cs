@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Invent_coffee
+namespace Invent_coffee.Resources.Admin_Pages
 {
     public partial class Records_page: UserControl
     {

@@ -39,6 +39,8 @@ public partial class Inventory_page : UserControl
         filterMenu.Items.Add("Lowest Price", null, Filter_Click);
         filterMenu.Items.Add("Highest Sold", null, Filter_Click);
         filterMenu.Items.Add("Lowest Sold", null, Filter_Click);
+        filterMenu.Items.Add("Highest Stock", null, Filter_Click);
+        filterMenu.Items.Add("Lowest Stock", null, Filter_Click);
         filterMenu.Items.Add("Available Stock", null, Filter_Click);
         filterMenu.Items.Add("Out of Stock", null, Filter_Click);
     }
@@ -80,6 +82,12 @@ public partial class Inventory_page : UserControl
                     query += " ORDER BY Sold DESC";
                     break;
                 case "Lowest Sold":
+                    query += " ORDER BY Sold ASC";
+                    break;
+                case "Highest Stock":
+                    query += " ORDER BY Sold DESC";
+                    break;
+                case "Lowest Stock":
                     query += " ORDER BY Sold ASC";
                     break;
                 case "Available Stock":
