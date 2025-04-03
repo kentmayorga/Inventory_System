@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_page));
             SignUpPage_Label = new Label();
             BrandPicBox = new PictureBox();
             Username_Label = new Label();
@@ -49,7 +50,7 @@
             // 
             SignUpPage_Label.AutoSize = true;
             SignUpPage_Label.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignUpPage_Label.ForeColor = Color.White;
+            SignUpPage_Label.ForeColor = Color.SaddleBrown;
             SignUpPage_Label.Location = new Point(257, 143);
             SignUpPage_Label.Name = "SignUpPage_Label";
             SignUpPage_Label.Size = new Size(284, 28);
@@ -178,7 +179,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(111, 78, 55);
+            BackColor = SystemColors.Control;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(ErrorMessageLabel);
             Controls.Add(RegistrationBtn);
             Controls.Add(SignUpLabel);
@@ -190,6 +193,7 @@
             Controls.Add(Username_Label);
             Controls.Add(BrandPicBox);
             Controls.Add(SignUpPage_Label);
+            DoubleBuffered = true;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login_page";
             Size = new Size(788, 450);

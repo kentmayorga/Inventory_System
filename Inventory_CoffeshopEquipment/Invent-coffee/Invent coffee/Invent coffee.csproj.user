@@ -8,6 +8,9 @@
     <Compile Update="Home_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Location_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Login_page.cs">
       <SubType>UserControl</SubType>
     </Compile>

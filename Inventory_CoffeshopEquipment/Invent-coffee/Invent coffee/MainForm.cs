@@ -18,26 +18,7 @@ public partial class MainForm : Form
     public MainForm()
     {
         InitializeComponent();
-        TestDatabaseConnection();
         ShowLoginPage();
-    }
-
-    //Check for the database connection
-    private void TestDatabaseConnection()
-    {
-        try
-        {
-            using (MySqlConnection conn = new MySqlConnection(connectiondb))
-            {
-                conn.Open();
-                MessageBox.Show("Connected!");
-                conn.Close();
-            }
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Connection failed: " + ex.Message);
-        }
     }
     public void ShowLoginPage(){
         Main_Panel.Controls.Clear();
@@ -62,6 +43,11 @@ public partial class MainForm : Form
     {
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Cart_Page(this));
+    }
+    public void ShowLocationPage()
+    {
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Location_Page(this));
     }
 } 
 

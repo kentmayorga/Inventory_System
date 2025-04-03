@@ -15,7 +15,7 @@ namespace Invent_coffee
     public partial class Login_page : UserControl
     {
         private MainForm _mainform;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private string connectiondb = "server=localhost;database=mydb;user=root;password=Cold988@@;";
         public Login_page(MainForm mainform)
         {
             InitializeComponent();
@@ -41,12 +41,13 @@ namespace Invent_coffee
         }
         private void Username_txtBox_TextChanged(object sender, EventArgs e)
         {
-            Username_txtBox.Text = Username_txtBox.Text.ToLower();
+            //Username_txtBox.Text = Username_txtBox.Text.ToUpper();
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             string username = Username_txtBox.Text;
+            string formattedUsername = char.ToUpper(username[0]) + username.Substring(1).ToLower();
             string password = Password_txtBox.Text;
 
             errorProviderUsername.SetError(Username_txtBox, string.IsNullOrWhiteSpace(username) ? "This field cannot be empty!" : "");

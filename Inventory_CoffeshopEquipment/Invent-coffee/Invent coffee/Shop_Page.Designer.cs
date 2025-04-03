@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             Navigations = new Panel();
             Cart = new Button();
             HomeButton = new Button();
@@ -62,12 +66,13 @@
             // 
             // Cart
             // 
-            Cart.Location = new Point(609, 12);
+            Cart.BackColor = Color.White;
+            Cart.Location = new Point(609, 9);
             Cart.Name = "Cart";
             Cart.Size = new Size(75, 23);
             Cart.TabIndex = 9;
             Cart.Text = "Cart";
-            Cart.UseVisualStyleBackColor = true;
+            Cart.UseVisualStyleBackColor = false;
             Cart.Click += Cart_Click;
             // 
             // HomeButton
@@ -127,12 +132,44 @@
             LogOutButton.TabIndex = 5;
             LogOutButton.Text = "Log Out";
             LogOutButton.UseVisualStyleBackColor = true;
+            LogOutButton.Click += LogOutButton_Click;
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(150, 121, 105);
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.BackgroundColor = Color.Bisque;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.Chocolate;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.Control;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Bisque;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new Padding(5);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.EditMode = DataGridViewEditMode.EditOnF2;
+            dataGridView1.GridColor = SystemColors.Control;
             dataGridView1.Location = new Point(0, 41);
             dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(150, 121, 105);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.ShowCellErrors = false;
             dataGridView1.Size = new Size(548, 374);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellMouseClick += dataGridView1_CellMouseClick;
@@ -140,33 +177,36 @@
             // ProductName
             // 
             ProductName.AutoSize = true;
+            ProductName.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ProductName.Location = new Point(554, 58);
             ProductName.Name = "ProductName";
-            ProductName.Size = new Size(39, 15);
+            ProductName.Size = new Size(42, 15);
             ProductName.TabIndex = 3;
-            ProductName.Text = "Name";
+            ProductName.Text = "Name:";
             // 
             // ProductDescription
             // 
             ProductDescription.AutoSize = true;
+            ProductDescription.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ProductDescription.Location = new Point(554, 84);
             ProductDescription.Name = "ProductDescription";
-            ProductDescription.Size = new Size(67, 15);
+            ProductDescription.Size = new Size(72, 15);
             ProductDescription.TabIndex = 4;
-            ProductDescription.Text = "Description";
+            ProductDescription.Text = "Description:";
             // 
             // ProductPrice
             // 
             ProductPrice.AutoSize = true;
-            ProductPrice.Location = new Point(554, 114);
+            ProductPrice.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProductPrice.Location = new Point(554, 110);
             ProductPrice.Name = "ProductPrice";
-            ProductPrice.Size = new Size(33, 15);
+            ProductPrice.Size = new Size(38, 15);
             ProductPrice.TabIndex = 5;
-            ProductPrice.Text = "Price";
+            ProductPrice.Text = "Price:";
             // 
             // ProductQuantity
             // 
-            ProductQuantity.Location = new Point(554, 180);
+            ProductQuantity.Location = new Point(559, 180);
             ProductQuantity.Name = "ProductQuantity";
             ProductQuantity.Size = new Size(100, 23);
             ProductQuantity.TabIndex = 6;
@@ -174,11 +214,13 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(554, 162);
             label1.Name = "label1";
-            label1.Size = new Size(53, 15);
+            label1.Size = new Size(55, 15);
             label1.TabIndex = 7;
             label1.Text = "Quantity";
+            label1.Click += label1_Click;
             // 
             // AddToCartButton
             // 
@@ -194,6 +236,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PeachPuff;
             Controls.Add(AddToCartButton);
             Controls.Add(label1);
             Controls.Add(ProductQuantity);
@@ -203,7 +246,8 @@
             Controls.Add(Navigations);
             Controls.Add(dataGridView1);
             Name = "Shop_Page";
-            Size = new Size(772, 415);
+            Size = new Size(772, 416);
+            Load += Shop_Page_Load;
             Navigations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

@@ -103,6 +103,26 @@ namespace Invent_coffee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap declan_cronin_JK187yc6cRU_unsplash__1_ {
+            get {
+                object obj = ResourceManager.GetObject("declan-cronin-JK187yc6cRU-unsplash (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image__3_ {
+            get {
+                object obj = ResourceManager.GetObject("image (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_coffee_icon_coffee_vienna_breakfast_bistro_cafe_symbols_kitchen_food {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-coffee-icon-coffee-vienna-breakfast-bistro-cafe-symbols-kitchen-food", resourceCulture);
@@ -116,6 +136,16 @@ namespace Invent_coffee.Properties {
         internal static System.Drawing.Bitmap pngtree_coffee_logo_design_image_82183 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-coffee-logo-design-image_82183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_03_22_212606 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-03-22 212606", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -8,7 +8,7 @@ namespace Invent_coffee
     public partial class Registration_page : UserControl
     {
         private MainForm _mainform;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private string connectiondb = "server=localhost;database=mydb;user=root;password=Cold988@@;";
 
         public Registration_page(MainForm mainform)
         {

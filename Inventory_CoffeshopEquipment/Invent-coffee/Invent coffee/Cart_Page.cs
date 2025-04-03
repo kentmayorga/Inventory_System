@@ -14,7 +14,7 @@ namespace Invent_coffee
 {
     public partial class Cart_Page : UserControl
     {
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private string connectiondb = "server=localhost;database=mydb;user=root;password=Cold988@@;";
         private MainForm _mainform;
         private static int productID = 0;
 
@@ -168,6 +168,16 @@ namespace Invent_coffee
         private void HomeButton_Click(object sender, EventArgs e)
         {
             _mainform.ShowHomePage();
+        }
+
+        private void shopbutton_Click(object sender, EventArgs e)
+        {
+            _mainform.ShowShopPage();
+        }
+
+        private void QuantityLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

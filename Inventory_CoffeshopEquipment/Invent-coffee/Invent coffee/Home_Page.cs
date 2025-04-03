@@ -33,5 +33,10 @@ namespace Invent_coffee
         {
             _mainform.ShowShopPage();
         }
+
+        private void LocationButton_Click(object sender, EventArgs e)
+        {
+            _mainform.ShowLocationPage();
+        }
     }
 }

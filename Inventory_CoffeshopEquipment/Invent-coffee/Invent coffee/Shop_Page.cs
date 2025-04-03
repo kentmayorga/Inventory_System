@@ -13,15 +13,18 @@ using MySqlX.XDevAPI;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Invent_coffee.Resources;
 using MySqlX.XDevAPI.Common;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Security.Cryptography;
+
 
 namespace Invent_coffee
 {
     public partial class Shop_Page : UserControl
     {
         private MainForm _mainForm;
-        private string connectiondb = "server=localhost;database=mydb;user=root;password=1922tqbfjotldsql;";
+        private string connectiondb = "server=localhost;database=mydb;user=root;password=Cold988@@;";
         private static int productID = 0;
-
+        private static string ImagePath = "";
         public Shop_Page(MainForm mainform)
         {
             InitializeComponent();
@@ -117,7 +120,7 @@ namespace Invent_coffee
                 using (MySqlConnection conn = new MySqlConnection(connectiondb))
                 {
                     conn.Open();
-                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available FROM products";
+                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available, ImagePath AS Image FROM products";
                     using (MySqlCommand cmd = conn.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
@@ -129,6 +132,7 @@ namespace Invent_coffee
                     }
                     conn.Close();
                 }
+
             }
             catch (Exception ex)
             {
@@ -145,23 +149,21 @@ namespace Invent_coffee
         {
             _mainForm.ShowHomePage();
         }
-
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                //ProductName.Show();
-                //ProductDescription.Show();
-                //ProductPrice.Show();
-                //label1.Show();
-                //ProductQuantity.Show();
-                //AddToCartButton.Show();
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 ProductName.Text = "Name: " + row.Cells["Name"].Value.ToString();
                 ProductDescription.Text = "Description: " + row.Cells["Description"].Value.ToString();
                 ProductPrice.Text = "Price: " + row.Cells["Price"].Value.ToString();
 
                 productID = Convert.ToInt32(row.Cells["ProductID"].Value);
+
+                //if (row.Cells["productImage"].Value != null)
+                //{
+                //    productImage. = (Image)row.Cells["ProductImage"].Value;
+                //}
             }
         }
 
@@ -268,6 +270,21 @@ namespace Invent_coffee
                 MessageBox.Show("Unable to process add to cart at the moment.");
                 throw;
             }
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            _mainForm.ShowLoginPage();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Shop_Page_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
