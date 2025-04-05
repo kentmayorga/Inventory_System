@@ -10,13 +10,13 @@ namespace Invent_coffee.Resources;
 
 class connSql
 {
-    private string connSqlString;
-    private MySqlConnection conn;
+    private string? connSqlString;
+    private MySqlConnection? conn;
 
     public MySqlConnection connectSql()
     {
         try{
-            connSqlString = "server=localhost;database=trialdb;user=root;pwd=Matero#92002;";
+            connSqlString = "server=localhost;database=mydb;user=root;pwd=1922tqbfjotldsql;";
 
             conn = new MySqlConnection(connSqlString);
 

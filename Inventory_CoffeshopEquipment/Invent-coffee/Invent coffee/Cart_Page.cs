@@ -164,10 +164,14 @@ namespace Invent_coffee
                 }
             }
         }
-
         private void HomeButton_Click(object sender, EventArgs e)
         {
             _mainform.ShowHomePage();
+        }
+
+        private void CheckoutButton_Click(object sender, EventArgs e)
+        {
+            _mainform.ShowCheckoutPage();
         }
     }
 }

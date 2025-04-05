@@ -1,30 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventorysystem\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\hp\\source\\repos\\inventory_system_appsdev\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventorysystem\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\crud\\addproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\crud\\addproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\checkout_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\checkout_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventorysystem\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\hp\\source\\repos\\inventory_system_appsdev\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventorysystem\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\hp\\source\\repos\\inventory_system_appsdev\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +30,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditProduct_page.cs [Design]",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\EditProduct_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\CRUD\\EditProduct_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\EditProduct_page.cs [Design]",
-              "RelativeToolTip": "Invent coffee\\CRUD\\EditProduct_page.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Checkout_Page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Checkout_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Checkout_Page.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Checkout_Page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Checkout_Page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:27:04.542Z",
+              "WhenOpened": "2025-04-05T05:10:20.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shop_Page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Shop_Page.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Shop_Page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:09:30.023Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Inventory_page.cs [Design]",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Inventory_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\Inventory_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Inventory_page.cs [Design]",
-              "RelativeToolTip": "Invent coffee\\Inventory_page.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:19:40.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\MainForm.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\MainForm.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\MainForm.cs",
-              "RelativeToolTip": "Invent coffee\\MainForm.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAIAwwE0AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:10:39.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddProduct_page.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\AddProduct_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\CRUD\\AddProduct_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\AddProduct_page.cs",
-              "RelativeToolTip": "Invent coffee\\CRUD\\AddProduct_page.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T09:55:34.291Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditProduct_page.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\EditProduct_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\CRUD\\EditProduct_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\CRUD\\EditProduct_page.cs",
-              "RelativeToolTip": "Invent coffee\\CRUD\\EditProduct_page.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAADwv0QAAAAfAAAAAAAAAA==",
+              "Title": "Shop_Page.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Shop_Page.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs",
+              "RelativeToolTip": "Invent coffee\\Shop_Page.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowM4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T09:53:07.858Z",
+              "WhenOpened": "2025-04-05T04:50:29.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Inventory_page.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Inventory_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\Inventory_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Inventory_page.cs",
-              "RelativeToolTip": "Invent coffee\\Inventory_page.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwFsAAAA0AAAAAAAAAA==",
+              "Title": "Cart_Page.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Cart_Page.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs",
+              "RelativeToolTip": "Invent coffee\\Cart_Page.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAKwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:21:13.709Z"
+              "WhenOpened": "2025-04-05T04:46:20.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home_Page.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Home_Page.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Inventory_System_AppsDev\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.cs",
+              "RelativeToolTip": "Invent coffee\\Home_Page.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:38:35.842Z"
             }
           ]
         }

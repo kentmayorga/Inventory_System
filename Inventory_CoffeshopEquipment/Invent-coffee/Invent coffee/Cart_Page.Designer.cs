@@ -128,6 +128,7 @@
             CheckoutButton.TabIndex = 7;
             CheckoutButton.Text = "Checkout";
             CheckoutButton.UseVisualStyleBackColor = true;
+            CheckoutButton.Click += CheckoutButton_Click;
             // 
             // Cart_Page
             // 

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Inventory_CoffeshopEquipment",
+    "\\Inventory_CoffeshopEquipment\\Invent-coffee"
   ],
-  "SelectedNode": "\\Invent coffee.sln",
+  "SelectedNode": "\\Inventory_CoffeshopEquipment\\Invent-coffee",
   "PreviewInSolutionExplorer": false
 }

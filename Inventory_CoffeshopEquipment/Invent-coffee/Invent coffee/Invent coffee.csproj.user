@@ -8,6 +8,9 @@
     <Compile Update="Cart_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Checkout_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CRUD\AddProduct_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
