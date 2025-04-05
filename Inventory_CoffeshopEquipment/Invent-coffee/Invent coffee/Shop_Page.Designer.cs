@@ -208,7 +208,7 @@
             // 
             // ProductQuantity
             // 
-            ProductQuantity.Location = new Point(559, 180);
+            ProductQuantity.Location = new Point(559, 346);
             ProductQuantity.Name = "ProductQuantity";
             ProductQuantity.Size = new Size(100, 23);
             ProductQuantity.TabIndex = 6;
@@ -217,7 +217,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(554, 162);
+            label1.Location = new Point(559, 315);
             label1.Name = "label1";
             label1.Size = new Size(55, 15);
             label1.TabIndex = 7;
@@ -238,9 +238,10 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Location = new Point(559, 218);
+            pictureBox1.Location = new Point(559, 144);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(195, 139);
+            pictureBox1.Size = new Size(195, 146);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 

@@ -164,7 +164,7 @@ namespace Invent_coffee
 
                 dataGridView1.DataSource = dt;
                 dataGridView1.RowTemplate.Height = 80;
-                //pictureBox1.Image = Image.FromFile(imagePath);
+                
             }
             catch (Exception ex)
             {
@@ -191,10 +191,12 @@ namespace Invent_coffee
                 ProductName.Text = "Name: " + row.Cells["Name"].Value.ToString();
                 ProductDescription.Text = "Description: " + row.Cells["Description"].Value.ToString();
                 ProductPrice.Text = "Price: " + row.Cells["Price"].Value.ToString();
+                Image img = (Image)dataGridView1.Rows[e.RowIndex].Cells["Image"].Value;
+                pictureBox1.Image = img;
 
                 productID = Convert.ToInt32(row.Cells["ProductID"].Value);
 
-                
+               
 
                 //if (row.Cells["productImage"].Value != null)
                 //{
