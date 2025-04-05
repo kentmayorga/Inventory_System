@@ -45,8 +45,10 @@
             ProductQuantity = new TextBox();
             label1 = new Label();
             AddToCartButton = new Button();
+            pictureBox1 = new PictureBox();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Navigations
@@ -232,11 +234,22 @@
             AddToCartButton.UseVisualStyleBackColor = true;
             AddToCartButton.Click += AddToCartButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Location = new Point(559, 218);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(195, 139);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Shop_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
+            Controls.Add(pictureBox1);
             Controls.Add(AddToCartButton);
             Controls.Add(label1);
             Controls.Add(ProductQuantity);
@@ -250,6 +263,7 @@
             Load += Shop_Page_Load;
             Navigations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -269,5 +283,6 @@
         private TextBox ProductQuantity;
         private Label label1;
         private Button AddToCartButton;
+        private PictureBox pictureBox1;
     }
 }

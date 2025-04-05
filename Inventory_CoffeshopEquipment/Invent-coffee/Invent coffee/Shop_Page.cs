@@ -116,29 +116,62 @@ namespace Invent_coffee
         {
             try
             {
-                DataTable result = new DataTable();
-                using (MySqlConnection conn = new MySqlConnection(connectiondb))
-                {
-                    conn.Open();
-                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available, ImagePath AS Image FROM products";
-                    using (MySqlCommand cmd = conn.CreateCommand())
-                    {
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = query;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Image", typeof(Image));
+                dt.Columns.Add("ProductID", typeof(int));
+                dt.Columns.Add("Name", typeof(string));
+                dt.Columns.Add("Description", typeof(string));
+                dt.Columns.Add("Price", typeof(decimal));
+                dt.Columns.Add("Available", typeof(int));
 
-                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                        adapter.Fill(result);
-                        dataGridView1.DataSource = result;
+                using (MySqlConnection connection = new MySqlConnection(connectiondb))
+                {
+                    connection.Open();
+                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available, ImagePath FROM products;";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string imagePath = reader["ImagePath"].ToString();
+                            Image img = File.Exists(imagePath) ? Image.FromFile(imagePath) : null;
+                            
+
+                            dt.Rows.Add(
+                                img,
+                                Convert.ToInt32(reader["ProductID"]),
+                                reader["Name"].ToString(),
+                                reader["Description"].ToString(),
+                                Convert.ToDecimal(reader["Price"]),
+                                Convert.ToInt32(reader["Available"])
+
+                            );
+                            
+                        }
                     }
-                    conn.Close();
+                    connection.Close();
                 }
 
+                dataGridView1.Columns.Clear();
+
+                DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+                imgCol.Name = "Image";
+                imgCol.HeaderText = "Image";
+                imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                imgCol.DataPropertyName = "Image";
+
+                dataGridView1.Columns.Add(imgCol);
+
+                dataGridView1.DataSource = dt;
+                dataGridView1.RowTemplate.Height = 80;
+                //pictureBox1.Image = Image.FromFile(imagePath);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading products: " + ex.Message);
             }
         }
+
 
         private void Cart_Click(object sender, EventArgs e)
         {
@@ -151,6 +184,7 @@ namespace Invent_coffee
         }
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
@@ -159,6 +193,8 @@ namespace Invent_coffee
                 ProductPrice.Text = "Price: " + row.Cells["Price"].Value.ToString();
 
                 productID = Convert.ToInt32(row.Cells["ProductID"].Value);
+
+                
 
                 //if (row.Cells["productImage"].Value != null)
                 //{
