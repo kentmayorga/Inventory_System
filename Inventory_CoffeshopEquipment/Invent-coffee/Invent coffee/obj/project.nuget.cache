@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/J2gNFINn7w=",
+  "dgSpecHash": "SX8g45HL4hQ=",
   "success": true,
-  "projectFilePath": "E:\\Acer\\Documents\\Coding\\Projects\\InventorySystem\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+  "projectFilePath": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ramirez\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Ramirez\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

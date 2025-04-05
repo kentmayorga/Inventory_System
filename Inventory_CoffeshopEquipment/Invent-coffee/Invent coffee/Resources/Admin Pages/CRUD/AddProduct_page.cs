@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Invent_coffee.Resources;
 using MySql.Data.MySqlClient;
 
-namespace Invent_coffee.CRUD
+namespace Invent_coffee.Resources.Admin_Pages.CRUD
 {
     public partial class AddProduct_page : UserControl
     {
@@ -18,11 +17,10 @@ namespace Invent_coffee.CRUD
         private connSql conn = new connSql();
         private string savedImagePath = "";
         private string sourcePath = "";
-
-        public AddProduct_page(MainForm mainForm)
+        public AddProduct_page(MainForm mainform)
         {
             InitializeComponent();
-            _mainform = mainForm;
+            _mainform = mainform;
             ProductImage_label.Visible = false;
         }
 
@@ -50,6 +48,7 @@ namespace Invent_coffee.CRUD
                 Console.WriteLine(rowsAffected > 0 ? "Product added successfully!" : "Failed to add product.");
 
                 File.Copy(sourcePath, savedImagePath, true);
+                connection.Close();
             }
             catch (Exception ex)
             {

@@ -1,6 +1,6 @@
-﻿namespace Invent_coffee
+﻿namespace Invent_coffee.Resources.Admin_Pages
 {
-    partial class Records_page
+    partial class Accounts_page
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,11 @@
         {
             SuspendLayout();
             // 
-            // Records_page
+            // Accounts_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Name = "Records_page";
+            Name = "Accounts_page";
             Size = new Size(882, 553);
             ResumeLayout(false);
         }

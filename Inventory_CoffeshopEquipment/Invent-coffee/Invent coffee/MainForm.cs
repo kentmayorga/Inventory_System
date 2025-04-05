@@ -1,16 +1,7 @@
 ﻿using Invent_coffee.Resources;
-using Invent_coffee.CRUD;
+using Invent_coffee.Resources.Admin_Pages;
+using Invent_coffee.Resources.Admin_Pages.CRUD;
 using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Invent_coffee;
 
@@ -61,13 +52,13 @@ public partial class MainForm : Form
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Admin_page(this));
     }
-
+    
     public void ShowInventoryPage()
     {
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Inventory_page(this));
     }
-
+    //inventory panels
     public void ShowAddProductPage(){
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new AddProduct_page(this));
