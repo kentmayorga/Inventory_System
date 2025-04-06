@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
+    "C:\\Users\\Device\\source\\repos\\repo1\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {
+    "C:\\Users\\Device\\source\\repos\\repo1\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "projectUniqueName": "C:\\Users\\Device\\source\\repos\\repo1\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
         "projectName": "Invent coffee",
-        "projectPath": "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
-        "packagesPath": "C:\\Users\\Lendon A. Manga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
+        "projectPath": "C:\\Users\\Device\\source\\repos\\repo1\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "packagesPath": "C:\\Users\\Device\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Device\\source\\repos\\repo1\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lendon A. Manga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Device\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

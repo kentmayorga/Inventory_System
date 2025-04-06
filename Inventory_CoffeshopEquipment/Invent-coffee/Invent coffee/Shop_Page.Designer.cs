@@ -41,8 +41,10 @@
             ProductQuantity = new TextBox();
             label1 = new Label();
             AddToCartButton = new Button();
+            pictureBox1 = new PictureBox();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Navigations
@@ -62,7 +64,7 @@
             // 
             // Cart
             // 
-            Cart.Location = new Point(609, 12);
+            Cart.Location = new Point(609, 10);
             Cart.Name = "Cart";
             Cart.Size = new Size(75, 23);
             Cart.TabIndex = 9;
@@ -141,33 +143,40 @@
             // ProductName
             // 
             ProductName.AutoSize = true;
+            ProductName.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProductName.ForeColor = Color.White;
             ProductName.Location = new Point(554, 58);
             ProductName.Name = "ProductName";
-            ProductName.Size = new Size(39, 15);
+            ProductName.Size = new Size(42, 18);
             ProductName.TabIndex = 3;
             ProductName.Text = "Name";
             // 
             // ProductDescription
             // 
             ProductDescription.AutoSize = true;
+            ProductDescription.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            ProductDescription.ForeColor = Color.White;
             ProductDescription.Location = new Point(554, 84);
             ProductDescription.Name = "ProductDescription";
-            ProductDescription.Size = new Size(67, 15);
+            ProductDescription.Size = new Size(78, 18);
             ProductDescription.TabIndex = 4;
             ProductDescription.Text = "Description";
+            ProductDescription.Click += ProductDescription_Click;
             // 
             // ProductPrice
             // 
             ProductPrice.AutoSize = true;
+            ProductPrice.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            ProductPrice.ForeColor = Color.White;
             ProductPrice.Location = new Point(554, 114);
             ProductPrice.Name = "ProductPrice";
-            ProductPrice.Size = new Size(33, 15);
+            ProductPrice.Size = new Size(40, 18);
             ProductPrice.TabIndex = 5;
             ProductPrice.Text = "Price";
             // 
             // ProductQuantity
             // 
-            ProductQuantity.Location = new Point(554, 180);
+            ProductQuantity.Location = new Point(559, 331);
             ProductQuantity.Name = "ProductQuantity";
             ProductQuantity.Size = new Size(100, 23);
             ProductQuantity.TabIndex = 6;
@@ -175,9 +184,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(554, 162);
+            label1.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(559, 307);
             label1.Name = "label1";
-            label1.Size = new Size(53, 15);
+            label1.Size = new Size(61, 18);
             label1.TabIndex = 7;
             label1.Text = "Quantity";
             // 
@@ -191,10 +202,20 @@
             AddToCartButton.UseVisualStyleBackColor = true;
             AddToCartButton.Click += AddToCartButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(622, 185);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Shop_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(99, 72, 50);
+            Controls.Add(pictureBox1);
             Controls.Add(AddToCartButton);
             Controls.Add(label1);
             Controls.Add(ProductQuantity);
@@ -205,8 +226,10 @@
             Controls.Add(dataGridView1);
             Name = "Shop_Page";
             Size = new Size(772, 415);
+            Load += Shop_Page_Load;
             Navigations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -226,5 +249,6 @@
         private TextBox ProductQuantity;
         private Label label1;
         private Button AddToCartButton;
+        private PictureBox pictureBox1;
     }
 }

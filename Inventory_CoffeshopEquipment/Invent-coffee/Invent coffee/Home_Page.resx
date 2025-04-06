@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label24.Text" xml:space="preserve">
+    <value>We’re passionate about more than just coffee , we’re passionate about the moments it creates. Whether you're a casual sipper or a die-hard coffee lover, our carefully curated selection of premium coffee items is designed to elevate your daily brew.</value>
+  </data>
 </root>

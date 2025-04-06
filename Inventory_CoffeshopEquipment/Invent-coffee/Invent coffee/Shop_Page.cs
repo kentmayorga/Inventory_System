@@ -224,5 +224,15 @@ namespace Invent_coffee
             AppSession.role = "";
             _mainForm.ShowLoginPage();
         }
+
+        private void Shop_Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductDescription_Click(object sender, EventArgs e)
+        {
+    
+        }
     }
 }
