@@ -156,3 +156,4 @@ C:\Users\Lendon Manga\source\repos\repo\Inventory_CoffeshopEquipment\Invent-coff
 C:\Users\Lendon Manga\source\repos\repo\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent coffee.genruntimeconfig.cache
 C:\Users\Lendon Manga\source\repos\repo\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\ref\Invent coffee.dll
 C:\Users\Lendon Manga\source\repos\repo\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Location_Page.resources
+C:\Users\HP\source\repos\Inventory_system\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Location_Page.resources
