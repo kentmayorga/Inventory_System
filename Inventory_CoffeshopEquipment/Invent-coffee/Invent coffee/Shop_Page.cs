@@ -33,102 +33,55 @@ namespace Invent_coffee
         {
             _mainForm.ShowHomePage();
         }
-
-        //private void CreateProductButton(int productId, string name, decimal price, string imagePath)
-        //{
-        //    Panel panel = new Panel();
-        //    panel.Size = new Size(150, 200);
-        //    panel.BorderStyle = BorderStyle.Fixed3D;
-        //    panel.Padding = new Padding(5, 5, 5, 5);
-
-        //    PictureBox pictureBox = new PictureBox();
-        //    pictureBox.BorderStyle = BorderStyle.FixedSingle;
-        //    pictureBox.Size = new Size(140, 140);
-        //    pictureBox.Location = new Point(5, 5);
-        //    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
-        //    if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
-        //    {
-        //        pictureBox.Image = Image.FromFile(imagePath);
-        //    }
-        //    else
-        //    {
-        //        pictureBox.Image = Image.FromFile(@"C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\Resources\pngtree-coffee-logo-design-image_82183.jpg");
-        //    }
-
-        //    Button productButton = new Button();
-        //    productButton.Text = $"{name}\n${price}";
-        //    productButton.Tag = productId;
-        //    productButton.Width = 140;
-        //    productButton.Height = 50;
-        //    productButton.Location = new Point(5, 140);
-        //    productButton.TextAlign = ContentAlignment.MiddleCenter;
-        //    productButton.Click += ProductButton_Click;
-
-        //    panel.Controls.Add(pictureBox);
-        //    panel.Controls.Add(productButton);
-
-        //    tableLayoutPanel1.Controls.Add(panel);
-        //}
-
-        private void ProductButton_Click(object sender, EventArgs e)
-        {
-            //Button clickedButton = sender as Button;
-            //int productId = (int)clickedButton.Tag;
-
-
-        }
-
-        //private void AddToCart(int userId, int productId, int quantity)
-        //{
-        //    try
-        //    {
-        //        using (MySqlConnection conn = new MySqlConnection(connectiondb))
-        //        {
-        //            string query = "INSERT INTO cart (UserID, ProductID, Quantity) " +
-        //                           "VALUES (@UserID, @ProductID, @Quantity) " +
-        //                           "ON DUPLICATE KEY UPDATE Quantity = Quantity + @Quantity";
-
-        //            using (MySqlCommand cmd = new MySqlCommand(query, conn))
-        //            {
-        //                cmd.Parameters.AddWithValue("@UserID", userId);
-        //                cmd.Parameters.AddWithValue("@ProductID", productId);
-        //                cmd.Parameters.AddWithValue("@Quantity", quantity);
-
-        //                conn.Open();
-        //                cmd.ExecuteNonQuery();
-        //                conn.Close();
-
-        //                MessageBox.Show("Product added to cart!");
-        //            }
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error adding to cart: " + ex.Message);
-        //    }
-        //}
-
         private void GetProducts()
         {
             try
             {
-                DataTable result = new DataTable();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Image", typeof(Image));
+                dt.Columns.Add("ProductID", typeof(int));
+                dt.Columns.Add("Name", typeof(string));
+                dt.Columns.Add("Description", typeof(string));
+                dt.Columns.Add("Price", typeof(decimal));
+                dt.Columns.Add("Available", typeof(int));
+
                 using (MySqlConnection connection = conn.connectSql())
                 {
                     connection.Open();
-                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available FROM products";
-                    using (MySqlCommand cmd = connection.CreateCommand())
+                    string query = "SELECT ProductID, Name, Description, Price, (Stock - sold) AS Available, ImagePath FROM products;";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = query;
+                        while (reader.Read())
+                        {
+                            string imagePath = reader["ImagePath"].ToString();
+                            Image img = File.Exists(imagePath) ? Image.FromFile(imagePath) : null;
 
-                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                        adapter.Fill(result);
-                        dataGridView1.DataSource = result;
+                            dt.Rows.Add(
+                                img,
+                                Convert.ToInt32(reader["ProductID"]),
+                                reader["Name"].ToString(),
+                                reader["Description"].ToString(),
+                                Convert.ToDecimal(reader["Price"]),
+                                Convert.ToInt32(reader["Available"])
+                            );
+                        }
                     }
                     connection.Close();
                 }
+
+                dataGridView1.Columns.Clear();
+
+                DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+                imgCol.Name = "Image";
+                imgCol.HeaderText = "Image";
+                imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                imgCol.DataPropertyName = "Image";
+
+                dataGridView1.Columns.Add(imgCol);
+
+                dataGridView1.DataSource = dt;
+                dataGridView1.RowTemplate.Height = 80; // Adjust height for better image display
             }
             catch (Exception ex)
             {
@@ -150,12 +103,6 @@ namespace Invent_coffee
         {
             if (e.RowIndex >= 0)
             {
-                //ProductName.Show();
-                //ProductDescription.Show();
-                //ProductPrice.Show();
-                //label1.Show();
-                //ProductQuantity.Show();
-                //AddToCartButton.Show();
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 ProductName.Text = "Name: " + row.Cells["Name"].Value.ToString();
                 ProductDescription.Text = "Description: " + row.Cells["Description"].Value.ToString();
@@ -268,6 +215,14 @@ namespace Invent_coffee
                 MessageBox.Show("Unable to process add to cart at the moment.");
                 throw;
             }
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            AppSession.id = 0;
+            AppSession.username = "";
+            AppSession.role = "";
+            _mainForm.ShowLoginPage();
         }
     }
 }

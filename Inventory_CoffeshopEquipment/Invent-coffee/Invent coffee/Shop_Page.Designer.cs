@@ -127,6 +127,7 @@
             LogOutButton.TabIndex = 5;
             LogOutButton.Text = "Log Out";
             LogOutButton.UseVisualStyleBackColor = true;
+            LogOutButton.Click += LogOutButton_Click;
             // 
             // dataGridView1
             // 

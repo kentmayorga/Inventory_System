@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             Navigations = new Panel();
+            Username = new Label();
             LocationButton = new Button();
             ShopButton = new Button();
             LogOutButton = new Button();
             pictureBox1 = new PictureBox();
-            Username = new Label();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,8 +49,18 @@
             Navigations.ImeMode = ImeMode.Disable;
             Navigations.Location = new Point(0, 0);
             Navigations.Name = "Navigations";
-            Navigations.Size = new Size(772, 49);
+            Navigations.Size = new Size(788, 49);
             Navigations.TabIndex = 0;
+            // 
+            // Username
+            // 
+            Username.AutoSize = true;
+            Username.ForeColor = Color.White;
+            Username.Location = new Point(614, 16);
+            Username.Name = "Username";
+            Username.Size = new Size(32, 15);
+            Username.TabIndex = 8;
+            Username.Text = "label";
             // 
             // LocationButton
             // 
@@ -87,7 +97,7 @@
             // LogOutButton
             // 
             LogOutButton.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LogOutButton.Location = new Point(698, 10);
+            LogOutButton.Location = new Point(667, 10);
             LogOutButton.Name = "LogOutButton";
             LogOutButton.Size = new Size(59, 28);
             LogOutButton.TabIndex = 5;
@@ -98,31 +108,22 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.ab6ea7db_513a_4397_9cbd_e99ba6a30e0f1;
-            pictureBox1.Location = new Point(0, -85);
+            pictureBox1.Location = new Point(41, 352);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(788, 397);
+            pictureBox1.Size = new Size(699, 352);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // Username
-            // 
-            Username.AutoSize = true;
-            Username.ForeColor = Color.White;
-            Username.Location = new Point(636, 16);
-            Username.Name = "Username";
-            Username.Size = new Size(32, 15);
-            Username.TabIndex = 8;
-            Username.Text = "label";
             // 
             // Home_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             Controls.Add(Navigations);
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page";
-            Size = new Size(772, 415);
+            Size = new Size(788, 450);
             Navigations.ResumeLayout(false);
             Navigations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -133,9 +134,9 @@
 
         private Panel Navigations;
         private Button LogOutButton;
-        private PictureBox pictureBox1;
         private Button ShopButton;
         private Button LocationButton;
         private Label Username;
+        private PictureBox pictureBox1;
     }
 }
