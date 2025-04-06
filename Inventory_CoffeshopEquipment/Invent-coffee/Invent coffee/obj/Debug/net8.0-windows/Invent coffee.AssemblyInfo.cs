@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Invent coffee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5e311d2f23ba7f17e30ed4e6709d3bd6b1d104b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d74a020f2720de5b5e1040e94891856fd4700e28")]
+>>>>>>> abc8dd029b43800cff50e396468b624811289167
 [assembly: System.Reflection.AssemblyProductAttribute("Invent coffee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Invent coffee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

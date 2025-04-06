@@ -216,3 +216,10 @@ E:\Acer\Documents\Coding\Projects\Inventory_System\Inventory_CoffeshopEquipment\
 E:\Acer\Documents\Coding\Projects\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.CRUD.EditProduct_page.resources
 E:\Acer\Documents\Coding\Projects\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.Order_page.resources
 E:\Acer\Documents\Coding\Projects\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.Records_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.Accounts_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Admin_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.CRUD.AddProduct_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.CRUD.EditProduct_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Inventory_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.Order_page.resources
+C:\Users\HP\Source\Repos\Inventory_System\Inventory_CoffeshopEquipment\Invent-coffee\Invent coffee\obj\Debug\net8.0-windows\Invent_coffee.Resources.Admin_Pages.Records_page.resources

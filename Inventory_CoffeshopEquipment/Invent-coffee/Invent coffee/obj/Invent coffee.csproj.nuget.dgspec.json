@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
         "packagesPath": "C:\\Users\\Ferds Rago\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
+=======
+    "C:\\Users\\HP\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "projectName": "Invent coffee",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Invent coffee.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\Inventory_system\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\obj\\",
+>>>>>>> abc8dd029b43800cff50e396468b624811289167
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Tools\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Ferds Rago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> abc8dd029b43800cff50e396468b624811289167
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +93,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
