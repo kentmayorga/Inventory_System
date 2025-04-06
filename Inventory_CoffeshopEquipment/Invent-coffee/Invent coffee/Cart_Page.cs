@@ -44,6 +44,15 @@ namespace Invent_coffee
                         MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                         adapter.Fill(result);
                         dataGridViewCart.DataSource = result;
+
+                        /*if (dataGridViewCart.Columns.Contains("Image"))
+                        {
+                            DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+                            imgCol = (DataGridViewImageColumn)dataGridViewCart.Columns["Image"];
+                            imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                        }*/
+
+                       // dataGridViewCart.RowTemplate.Height = 60; // optional: makes the image clearer
                     }
                     conn.Close();
                 }
