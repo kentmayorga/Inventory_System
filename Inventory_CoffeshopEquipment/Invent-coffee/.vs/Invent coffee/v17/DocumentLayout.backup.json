@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\",
+  "WorkspaceRootPath": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\resources\\admin pages\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\inventory_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\resources\\admin pages\\crud\\addproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\crud\\addproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|e:\\acer\\documents\\coding\\projects\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\resources\\admin pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\resources\\admin pages\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\crud\\editproduct_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\resources\\admin pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\resources\\admin pages\\records_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\records_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\resources\\admin pages\\order_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\order_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\ferds rago\\desktop\\ashley\\appsdevproj\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\resources\\admin pages\\accounts_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\resources\\admin pages\\accounts_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Records_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Records_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Records_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Records_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Records_page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:20:02.27Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Admin_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Admin_page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:19:22.487Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Inventory_page.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Inventory_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Inventory_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Inventory_page.cs",
-              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Inventory_page.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwFkAAAAiAAAAAAAAAA==",
+              "Title": "AddProduct_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\CRUD\\AddProduct_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\CRUD\\AddProduct_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\CRUD\\AddProduct_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\CRUD\\AddProduct_page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:18:09.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T16:17:10.176Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Admin_page.cs",
-              "DocumentMoniker": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
-              "ToolTip": "E:\\Acer\\Documents\\Coding\\Projects\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
-              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Admin_page.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Title": "EditProduct_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\CRUD\\EditProduct_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\CRUD\\EditProduct_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\CRUD\\EditProduct_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\CRUD\\EditProduct_page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T07:15:21.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T16:19:06.345Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Order_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Order_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Order_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Order_page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:19:57.638Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Accounts_page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Accounts_page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Resources\\Admin Pages\\Accounts_page.cs",
+              "ToolTip": "C:\\Users\\Ferds Rago\\Desktop\\Ashley\\appsdevproj\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Resources\\Admin Pages\\Accounts_page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Resources\\Admin Pages\\Accounts_page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:19:12.864Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
