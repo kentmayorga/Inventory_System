@@ -196,7 +196,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(111, 78, 55);
+            BackColor = Color.White;
             Controls.Add(ErrorLabelSignUp);
             Controls.Add(label1);
             Controls.Add(SignIn_Btn);
