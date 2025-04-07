@@ -34,6 +34,8 @@
             ShopButton = new Button();
             LogOutButton = new Button();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,7 +51,7 @@
             Navigations.ImeMode = ImeMode.Disable;
             Navigations.Location = new Point(0, 0);
             Navigations.Name = "Navigations";
-            Navigations.Size = new Size(788, 49);
+            Navigations.Size = new Size(737, 49);
             Navigations.TabIndex = 0;
             // 
             // Username
@@ -108,26 +110,49 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.ab6ea7db_513a_4397_9cbd_e99ba6a30e0f1;
-            pictureBox1.Location = new Point(41, 352);
+            pictureBox1.Location = new Point(21, 349);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(699, 352);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(164, 111);
+            label1.Name = "label1";
+            label1.Size = new Size(433, 55);
+            label1.TabIndex = 2;
+            label1.Text = "MANGI INDIFICA";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(164, 213);
+            label2.Name = "label2";
+            label2.Size = new Size(436, 15);
+            label2.TabIndex = 3;
+            label2.Text = "We're passionate about more than just coffee, we're passionate about the moments";
             // 
             // Home_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(Navigations);
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page";
-            Size = new Size(788, 450);
+            Size = new Size(737, 450);
             Navigations.ResumeLayout(false);
             Navigations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -138,5 +163,7 @@
         private Button LocationButton;
         private Label Username;
         private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
     }
 }

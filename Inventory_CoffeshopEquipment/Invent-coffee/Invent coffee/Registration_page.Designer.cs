@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration_page));
             pictureBox1 = new PictureBox();
             SignUpPage_Label = new Label();
             SignUpUsername_Label = new Label();
@@ -196,7 +197,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(111, 78, 55);
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(ErrorLabelSignUp);
             Controls.Add(label1);
             Controls.Add(SignIn_Btn);

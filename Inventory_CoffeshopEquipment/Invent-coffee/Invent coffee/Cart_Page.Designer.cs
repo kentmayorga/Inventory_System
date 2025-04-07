@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             Navigations = new Panel();
             HomeButton = new Button();
             CartButton = new Button();
@@ -87,9 +89,13 @@
             // 
             // dataGridViewCart
             // 
+            dataGridViewCellStyle1.BackColor = Color.Bisque;
+            dataGridViewCart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCart.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCart.Location = new Point(0, 40);
             dataGridViewCart.Name = "dataGridViewCart";
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(111, 78, 55);
+            dataGridViewCart.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewCart.Size = new Size(772, 279);
             dataGridViewCart.TabIndex = 3;
             dataGridViewCart.CellMouseClick += dataGridViewCart_CellMouseClick;
@@ -104,14 +110,16 @@
             // QuantityLabel
             // 
             QuantityLabel.AutoSize = true;
-            QuantityLabel.Location = new Point(12, 343);
+            QuantityLabel.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            QuantityLabel.Location = new Point(12, 339);
             QuantityLabel.Name = "QuantityLabel";
-            QuantityLabel.Size = new Size(53, 15);
+            QuantityLabel.Size = new Size(67, 19);
             QuantityLabel.TabIndex = 5;
             QuantityLabel.Text = "Quantity";
             // 
             // UpdateQuantityButton
             // 
+            UpdateQuantityButton.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UpdateQuantityButton.Location = new Point(141, 359);
             UpdateQuantityButton.Name = "UpdateQuantityButton";
             UpdateQuantityButton.Size = new Size(100, 25);
@@ -133,6 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Bisque;
             Controls.Add(CheckoutButton);
             Controls.Add(UpdateQuantityButton);
             Controls.Add(QuantityLabel);
