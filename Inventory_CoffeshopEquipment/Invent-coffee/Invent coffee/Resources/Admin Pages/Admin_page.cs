@@ -33,17 +33,17 @@ public partial class Admin_page : UserControl
 
     private void OrderBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowOrderPage();
     }
 
     private void RecordBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowRecordPage();
     }
 
     private void AccountBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowAccountsPage();
     }
 
     private void LogOutBtn_Click(object sender, EventArgs e)
@@ -67,17 +67,17 @@ public partial class Admin_page : UserControl
 
     private void MiniNavBarOrderBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowOrderPage();
     }
 
     private void MiniNavBarRecordBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowRecordPage();
     }
 
     private void MiniNavBarAccountBtn_Click(object sender, EventArgs e)
     {
-
+        _mainform.ShowAccountsPage();
     }
 
     private void MiniNavLogOutBtn_Click(object sender, EventArgs e)

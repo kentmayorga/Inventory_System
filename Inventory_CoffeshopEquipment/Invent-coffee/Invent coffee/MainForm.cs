@@ -52,7 +52,7 @@ public partial class MainForm : Form
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new Admin_page(this));
     }
-    
+
     public void ShowInventoryPage()
     {
         Main_Panel.Controls.Clear();
@@ -67,6 +67,29 @@ public partial class MainForm : Form
     public void ShowEditProductPage(int id){
         Main_Panel.Controls.Clear();
         Main_Panel.Controls.Add(new EditProduct_page(this, id));
+    }
+    //================================
+
+    public void ShowOrderPage(){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Order_page(this));
+    }
+
+    public void ShowRecordPage(){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Records_page(this));
+    }
+
+    public void ShowAccountsPage()
+    {
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new Accounts_page(this));
+    }
+
+    //Account panel
+    public void ShowAddAccountPage(){
+        Main_Panel.Controls.Clear();
+        Main_Panel.Controls.Add(new AddAccount_page(this));
     }
 
     /*==========================
