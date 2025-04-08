@@ -197,9 +197,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             BackColor = Color.Transparent;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+=======
+            BackColor = Color.White;
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             Controls.Add(ErrorLabelSignUp);
             Controls.Add(label1);
             Controls.Add(SignIn_Btn);

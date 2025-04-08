@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\registration_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\registration_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\home_page.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\cart_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\shop_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\invent coffee\\registration_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\registration_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|solutionrelative:invent coffee\\home_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F248BEB-54FF-4B00-9ADD-FF4F9B794CA1}|Invent coffee\\Invent coffee.csproj|c:\\users\\lendon a. manga\\source\\repos\\inventory_system\\inventory_coffeshopequipment\\invent-coffee\\invent coffee\\registration_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Home_Page.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Home_Page.cs",
@@ -66,8 +70,17 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home_Page.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.Designer.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Home_Page.Designer.cs",
+              "ToolTip": "C:\\Users\\Lendon A. Manga\\Source\\Repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.Designer.cs",
+              "RelativeToolTip": "Invent coffee\\Home_Page.Designer.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAD4v3YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:45:28.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -87,18 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cart_Page.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs",
-              "RelativeDocumentMoniker": "Invent coffee\\Cart_Page.cs",
-              "ToolTip": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs [Design]",
-              "RelativeToolTip": "Invent coffee\\Cart_Page.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T15:32:26.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Registration_page.cs",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Registration_page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Registration_page.cs",
@@ -124,29 +126,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Shop_Page.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Shop_Page.cs",
               "ToolTip": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs [Design]",
               "RelativeToolTip": "Invent coffee\\Shop_Page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T05:36:16.208Z"
+              "WhenOpened": "2025-04-06T05:36:16.208Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Registration_page.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Registration_page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Registration_page.cs",
               "ToolTip": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Registration_page.cs [Design]",
               "RelativeToolTip": "Invent coffee\\Registration_page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T05:36:14.759Z"
+              "WhenOpened": "2025-04-06T05:36:14.759Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Shop_Page.cs",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Shop_Page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Shop_Page.cs",
@@ -158,19 +162,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Home_Page.cs",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Home_Page.cs",
               "ToolTip": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Home_Page.cs",
               "RelativeToolTip": "Invent coffee\\Home_Page.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:43:52.833Z"
+              "WhenOpened": "2025-04-06T10:43:52.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "Cart_Page.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs",
+              "RelativeDocumentMoniker": "Invent coffee\\Cart_Page.cs",
+              "ToolTip": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Cart_Page.cs [Design]",
+              "RelativeToolTip": "Invent coffee\\Cart_Page.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T15:32:26.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Login_page.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\Login_page.cs",
               "RelativeDocumentMoniker": "Invent coffee\\Login_page.cs",
@@ -181,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lendon A. Manga\\source\\repos\\Inventory_System\\Inventory_CoffeshopEquipment\\Invent-coffee\\Invent coffee\\MainForm.cs",
               "RelativeDocumentMoniker": "Invent coffee\\MainForm.cs",

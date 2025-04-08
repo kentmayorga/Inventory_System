@@ -70,7 +70,7 @@
             // 
             // Cart
             // 
-            Cart.Location = new Point(609, 12);
+            Cart.Location = new Point(609, 10);
             Cart.Name = "Cart";
             Cart.Size = new Size(75, 23);
             Cart.TabIndex = 9;
@@ -180,36 +180,67 @@
             // ProductName
             // 
             ProductName.AutoSize = true;
+<<<<<<< HEAD
             ProductName.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ProductName.Location = new Point(554, 58);
             ProductName.Name = "ProductName";
             ProductName.Size = new Size(54, 19);
+=======
+            ProductName.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProductName.ForeColor = Color.White;
+            ProductName.Location = new Point(554, 58);
+            ProductName.Name = "ProductName";
+            ProductName.Size = new Size(42, 18);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             ProductName.TabIndex = 3;
             ProductName.Text = "Name:";
             // 
             // ProductDescription
             // 
             ProductDescription.AutoSize = true;
+<<<<<<< HEAD
             ProductDescription.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
             ProductDescription.Location = new Point(554, 84);
             ProductDescription.Name = "ProductDescription";
             ProductDescription.Size = new Size(91, 19);
             ProductDescription.TabIndex = 4;
             ProductDescription.Text = "Description:";
+=======
+            ProductDescription.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            ProductDescription.ForeColor = Color.White;
+            ProductDescription.Location = new Point(554, 84);
+            ProductDescription.Name = "ProductDescription";
+            ProductDescription.Size = new Size(78, 18);
+            ProductDescription.TabIndex = 4;
+            ProductDescription.Text = "Description";
+            ProductDescription.Click += ProductDescription_Click;
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             // 
             // ProductPrice
             // 
             ProductPrice.AutoSize = true;
+<<<<<<< HEAD
             ProductPrice.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
             ProductPrice.Location = new Point(554, 114);
             ProductPrice.Name = "ProductPrice";
             ProductPrice.Size = new Size(48, 19);
+=======
+            ProductPrice.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            ProductPrice.ForeColor = Color.White;
+            ProductPrice.Location = new Point(554, 114);
+            ProductPrice.Name = "ProductPrice";
+            ProductPrice.Size = new Size(40, 18);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             ProductPrice.TabIndex = 5;
             ProductPrice.Text = "Price:";
             // 
             // ProductQuantity
             // 
+<<<<<<< HEAD
             ProductQuantity.Location = new Point(559, 346);
+=======
+            ProductQuantity.Location = new Point(559, 331);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             ProductQuantity.Name = "ProductQuantity";
             ProductQuantity.Size = new Size(100, 23);
             ProductQuantity.TabIndex = 6;
@@ -217,10 +248,18 @@
             // label1
             // 
             label1.AutoSize = true;
+<<<<<<< HEAD
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
             label1.Location = new Point(559, 324);
             label1.Name = "label1";
             label1.Size = new Size(72, 19);
+=======
+            label1.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(559, 307);
+            label1.Name = "label1";
+            label1.Size = new Size(61, 18);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             label1.TabIndex = 7;
             label1.Text = "Quantity:";
             // 
@@ -238,12 +277,18 @@
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Location = new Point(573, 156);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(178, 154);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+=======
+            pictureBox1.Location = new Point(622, 185);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
@@ -251,7 +296,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             BackColor = Color.FromArgb(111, 78, 55);
+=======
+            BackColor = Color.FromArgb(99, 72, 50);
+>>>>>>> 3d155b4e7c02403352e20d80b2ef59b33fe7cfd0
             Controls.Add(pictureBox1);
             Controls.Add(AddToCartButton);
             Controls.Add(label1);
@@ -264,6 +313,7 @@
             ForeColor = Color.Transparent;
             Name = "Shop_Page";
             Size = new Size(772, 415);
+            Load += Shop_Page_Load;
             Navigations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
