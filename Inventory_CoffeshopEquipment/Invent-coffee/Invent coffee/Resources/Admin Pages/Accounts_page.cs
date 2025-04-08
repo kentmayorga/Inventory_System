@@ -10,23 +10,13 @@ using System.Windows.Forms;
 
 namespace Invent_coffee.Resources.Admin_Pages
 {
-    public partial class Accounts_page : UserControl
+    public partial class Accounts_page: UserControl
     {
         private MainForm _mainform;
         public Accounts_page(MainForm mainform)
         {
             InitializeComponent();
             _mainform = mainform;
-        }
-
-        private void namelabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
