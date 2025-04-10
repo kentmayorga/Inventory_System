@@ -145,7 +145,6 @@ public partial class Inventory_page : UserControl
 
                 Inventory_DataGridView.Columns.Add(deleteColumn);
             }
-            connection.Close();
         }
         catch (Exception ex)
         {

@@ -56,6 +56,7 @@
             InformationData_datagridview.RowHeadersWidth = 51;
             InformationData_datagridview.Size = new Size(860, 415);
             InformationData_datagridview.TabIndex = 0;
+            InformationData_datagridview.CellContentClick += InformationData_datagridview_CellContentClick;
             // 
             // tablepanel
             // 
@@ -79,9 +80,9 @@
             actionslabel.ForeColor = Color.White;
             actionslabel.Location = new Point(701, 0);
             actionslabel.Name = "actionslabel";
-            actionslabel.Size = new Size(90, 21);
+            actionslabel.Size = new Size(80, 21);
             actionslabel.TabIndex = 5;
-            actionslabel.Text = "ACTIONS";
+            actionslabel.Text = "STATUS";
             // 
             // roles_label
             // 
