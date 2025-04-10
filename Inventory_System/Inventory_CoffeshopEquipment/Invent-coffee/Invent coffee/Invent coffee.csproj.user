@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Cart_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Home_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Login_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Registration_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\Accounts_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\Admin_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\CRUD\AddAccount_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\CRUD\AddProduct_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\CRUD\EditProduct_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\Inventory_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\Order_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Resources\Admin Pages\Records_page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Shop_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
