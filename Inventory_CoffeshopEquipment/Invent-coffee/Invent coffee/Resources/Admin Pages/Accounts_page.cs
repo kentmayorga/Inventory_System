@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx.Resultset;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace Invent_coffee.Resources.Admin_Pages
 {
@@ -33,7 +35,7 @@ namespace Invent_coffee.Resources.Admin_Pages
                 connection.Open();
                 Console.WriteLine("Connecting to database...");
 
-                string query = "SELECT id, username FROM users"; //SELECT id, lastname, firstname, usename, contact, address, role FROM users;
+                string query = "SELECT id, username, role, status FROM users"; //SELECT id, lastname, firstname, usename, contact, address, role FROM users;
 
                 // Modify query based on the selected filter
                 switch (selectedFilter)
@@ -71,14 +73,15 @@ namespace Invent_coffee.Resources.Admin_Pages
                     DataGridViewButtonColumn editColumn = new DataGridViewButtonColumn
                     {
                         Name = "Action",
-                        HeaderText = "Action",
+                        HeaderText = "Status",
                         Text = "Action",
                         UseColumnTextForButtonValue = true,
                         AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-                    };
+                    }; 
 
                     InformationData_datagridview.Columns.Add(editColumn);
                 }
+
                 connection.Close();
             }
             catch (Exception ex)
@@ -129,6 +132,35 @@ namespace Invent_coffee.Resources.Admin_Pages
         private void AddAccountBtn_Click(object sender, EventArgs e)
         {
             _mainform.ShowAddAccountPage();
+        }
+
+        private void InformationData_datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int idno = Convert.ToInt32(InformationData_datagridview.Rows[e.RowIndex].Cells["id"].Value);
+                string status = InformationData_datagridview.Rows[e.RowIndex].Cells["status"].Value.ToString();
+                string newStatus = (status == "active") ? "inactive" : "active";
+
+                try
+                {
+                    using MySqlConnection connection = conn.connectSql();
+                    connection.Open();
+
+                    string updateQuery = "UPDATE users SET status = @status WHERE id = @id";
+                    using MySqlCommand cmd = new MySqlCommand(updateQuery, connection);
+                    cmd.Parameters.AddWithValue("@status", newStatus);
+                    cmd.Parameters.AddWithValue("@id", idno);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("User status updated successfully!", "Success", MessageBoxButtons.OK);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error updating status: " + ex.Message, "Error", MessageBoxButtons.OK);
+                }
+            }
+            displayData();
         }
     }
 }

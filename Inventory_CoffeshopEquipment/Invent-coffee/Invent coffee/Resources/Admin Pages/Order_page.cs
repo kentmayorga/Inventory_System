@@ -65,21 +65,23 @@ namespace Invent_coffee.Resources.Admin_Pages
                 OrderInfo_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 OrderInfo_dataGridView.ColumnHeadersVisible = false;
 
-                /*
-                if (OrderInfo_dataGridView.Columns["Action"] == null) //make this a dropdown format with status(pending, inprogress, Complete)
+
+                if (OrderInfo_dataGridView.Columns["Action"] == null)
                 {
-                    DataGridViewButtonColumn editColumn = new DataGridViewButtonColumn
+                    DataGridViewComboBoxColumn statusColumn = new DataGridViewComboBoxColumn
                     {
                         Name = "Action",
-                        HeaderText = "Action",
-                        Text = "Action",
-                        UseColumnTextForButtonValue = true,
-                        AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                        HeaderText = "Status",
+                        AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells,
+                        FlatStyle = FlatStyle.Flat
                     };
 
-                    OrderInfo_dataGridView.Columns.Add(editColumn);
+                    statusColumn.Items.AddRange("Pending", "In Progress", "Complete");
+
+                    OrderInfo_dataGridView.Columns.Add(statusColumn);
                 }
-                */
+
+
                 connection.Close();
             }
             catch (Exception ex)
@@ -123,5 +125,6 @@ namespace Invent_coffee.Resources.Admin_Pages
         {
             _mainform.ShowAdminPage();
         }
+
     }
 }
