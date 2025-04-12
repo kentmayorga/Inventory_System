@@ -17,6 +17,7 @@ namespace Invent_coffee.Resources.Admin_Pages.CRUD
         private connSql conn = new connSql();
         private string savedImagePath = "";
         private string sourcePath = "";
+        private int clickedSave;
         public AddProduct_page(MainForm mainform)
         {
             InitializeComponent();
@@ -32,22 +33,79 @@ namespace Invent_coffee.Resources.Admin_Pages.CRUD
                 connection.Open();
                 Console.WriteLine("Connecting to database...");
 
-                string query = "INSERT INTO products(Name,Description,Price, Stock, ImagePath) VALUES (@product_name,@product_desc, @product_price, @product_stock, @product_img);";
+                //Check if the product already exists
+                string checkQuery = "SELECT COUNT(*) FROM products WHERE Name = @product_name";
+                using MySqlCommand checkCmd = new MySqlCommand(checkQuery, connection);
+                checkCmd.Parameters.AddWithValue("@product_name", productName.Text);
 
-                using MySqlCommand cmd = connection.CreateCommand();
+                int productExists = Convert.ToInt32(checkCmd.ExecuteScalar());
 
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = query;
-                cmd.Parameters.AddWithValue("@product_name", productName.Text);
-                cmd.Parameters.AddWithValue("@product_desc", productDesc.Text);
-                cmd.Parameters.AddWithValue("@product_price", decimal.Parse(productPrice.Text));
-                cmd.Parameters.AddWithValue("@product_stock", int.Parse(productStock.Text));
-                cmd.Parameters.AddWithValue("@product_img", savedImagePath);
+                if (productExists > 0)
+                {
+                    //Warn user and ask if they want to update or add new
+                    DialogResult result = MessageBox.Show(
+                        "Product already exists. Do you want to update the existing product?",
+                        "Product Exists",
+                        MessageBoxButtons.YesNoCancel,
+                        MessageBoxIcon.Question
+                    );
 
-                int rowsAffected = cmd.ExecuteNonQuery();
-                Console.WriteLine(rowsAffected > 0 ? "Product added successfully!" : "Failed to add product.");
+                    if (result == DialogResult.Yes)
+                    {
+                        // Update existing product
+                        string updateQuery = "UPDATE products SET Description = @product_desc, Price = @product_price, Stock = @product_stock, ImagePath = @product_img WHERE Name = @product_name";
+                        using MySqlCommand updateCmd = new MySqlCommand(updateQuery, connection);
+                        updateCmd.Parameters.AddWithValue("@product_name", productName.Text);
+                        updateCmd.Parameters.AddWithValue("@product_desc", productDesc.Text);
+                        updateCmd.Parameters.AddWithValue("@product_price", decimal.Parse(productPrice.Text));
+                        updateCmd.Parameters.AddWithValue("@product_stock", int.Parse(productStock.Text));
+                        updateCmd.Parameters.AddWithValue("@product_img", savedImagePath);
 
-                File.Copy(sourcePath, savedImagePath, true);
+                        int rowsUpdated = updateCmd.ExecuteNonQuery();
+                        Console.WriteLine(rowsUpdated > 0 ? "Product updated successfully!" : "Failed to update product.");
+                    }
+                    else if (result == DialogResult.No)
+                    {
+                        // Insert as new with a modified name to avoid duplicate key
+                        string newName = productName.Text + " (Copy)";
+                        string insertQuery = "INSERT INTO products(Name,Description,Price, Stock, ImagePath) VALUES (@product_name,@product_desc, @product_price, @product_stock, @product_img);";
+                        using MySqlCommand insertCmd = new MySqlCommand(insertQuery, connection);
+                        insertCmd.Parameters.AddWithValue("@product_name", newName);
+                        insertCmd.Parameters.AddWithValue("@product_desc", productDesc.Text);
+                        insertCmd.Parameters.AddWithValue("@product_price", decimal.Parse(productPrice.Text));
+                        insertCmd.Parameters.AddWithValue("@product_stock", int.Parse(productStock.Text));
+                        insertCmd.Parameters.AddWithValue("@product_img", savedImagePath);
+
+                        int rowsInserted = insertCmd.ExecuteNonQuery();
+                        Console.WriteLine(rowsInserted > 0 ? "Product added as new!" : "Failed to add product.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("User canceled the action.");
+                        clickedSave = 0;
+                    }
+                }
+                else
+                {
+                    // Step 3: Insert new product
+                    string insertQuery = "INSERT INTO products(Name,Description,Price, Stock, ImagePath) VALUES (@product_name,@product_desc, @product_price, @product_stock, @product_img);";
+                    using MySqlCommand insertCmd = new MySqlCommand(insertQuery, connection);
+                    insertCmd.Parameters.AddWithValue("@product_name", productName.Text);
+                    insertCmd.Parameters.AddWithValue("@product_desc", productDesc.Text);
+                    insertCmd.Parameters.AddWithValue("@product_price", decimal.Parse(productPrice.Text));
+                    insertCmd.Parameters.AddWithValue("@product_stock", int.Parse(productStock.Text));
+                    insertCmd.Parameters.AddWithValue("@product_img", savedImagePath);
+
+                    int rowsInserted = insertCmd.ExecuteNonQuery();
+                    Console.WriteLine(rowsInserted > 0 ? "Product added successfully!" : "Failed to add product.");
+                }
+
+                // Save image file
+                if (!string.IsNullOrEmpty(sourcePath) && !string.IsNullOrEmpty(savedImagePath))
+                {
+                    File.Copy(sourcePath, savedImagePath, true);
+                }
+
                 connection.Close();
             }
             catch (Exception ex)
@@ -58,8 +116,12 @@ namespace Invent_coffee.Resources.Admin_Pages.CRUD
 
         private void ProductSaveBtn_Click(object sender, EventArgs e)
         {
+            clickedSave = 1;
             SaveProductToDatabase(ProductName_textBox, ProductDescription_textBox, ProductPrice_textBox, ProductStock_textBox);
-            _mainform.ShowInventoryPage();
+            if(clickedSave == 1){
+                _mainform.ShowInventoryPage();
+            }
+            
         }
 
         private void AddImageBtn_Click(object sender, EventArgs e)
