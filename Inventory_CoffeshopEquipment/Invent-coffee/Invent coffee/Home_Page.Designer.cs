@@ -38,8 +38,16 @@
             label23 = new Label();
             label24 = new Label();
             label25 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            panel1 = new Panel();
+            label5 = new Label();
+            button1 = new Button();
             Navigations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // Navigations
@@ -53,14 +61,14 @@
             Navigations.ImeMode = ImeMode.Disable;
             Navigations.Location = new Point(0, 0);
             Navigations.Name = "Navigations";
-            Navigations.Size = new Size(740, 49);
+            Navigations.Size = new Size(771, 49);
             Navigations.TabIndex = 0;
             // 
             // Username
             // 
             Username.AutoSize = true;
             Username.ForeColor = Color.White;
-            Username.Location = new Point(614, 16);
+            Username.Location = new Point(627, 16);
             Username.Name = "Username";
             Username.Size = new Size(32, 15);
             Username.TabIndex = 8;
@@ -70,38 +78,40 @@
             // 
             LocationButton.AllowDrop = true;
             LocationButton.BackColor = Color.Transparent;
+            LocationButton.BackgroundImage = (Image)resources.GetObject("LocationButton.BackgroundImage");
+            LocationButton.BackgroundImageLayout = ImageLayout.Stretch;
             LocationButton.FlatAppearance.BorderSize = 0;
             LocationButton.FlatStyle = FlatStyle.Flat;
             LocationButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LocationButton.ForeColor = Color.White;
-            LocationButton.Location = new Point(65, 11);
+            LocationButton.Location = new Point(76, 2);
             LocationButton.Name = "LocationButton";
-            LocationButton.Size = new Size(98, 24);
+            LocationButton.Size = new Size(58, 42);
             LocationButton.TabIndex = 7;
-            LocationButton.Text = "LOCATION";
             LocationButton.UseVisualStyleBackColor = false;
             // 
             // ShopButton
             // 
             ShopButton.AllowDrop = true;
             ShopButton.BackColor = Color.Transparent;
+            ShopButton.BackgroundImage = (Image)resources.GetObject("ShopButton.BackgroundImage");
+            ShopButton.BackgroundImageLayout = ImageLayout.Stretch;
             ShopButton.FlatAppearance.BorderSize = 0;
             ShopButton.FlatAppearance.MouseOverBackColor = Color.Red;
             ShopButton.FlatStyle = FlatStyle.Flat;
             ShopButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ShopButton.ForeColor = Color.White;
-            ShopButton.Location = new Point(12, 11);
+            ShopButton.Location = new Point(13, 2);
             ShopButton.Name = "ShopButton";
-            ShopButton.Size = new Size(60, 24);
+            ShopButton.Size = new Size(48, 44);
             ShopButton.TabIndex = 6;
-            ShopButton.Text = "SHOP";
             ShopButton.UseVisualStyleBackColor = false;
             ShopButton.Click += ShopButton_Click;
             // 
             // LogOutButton
             // 
             LogOutButton.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LogOutButton.Location = new Point(667, 10);
+            LogOutButton.Location = new Point(685, 10);
             LogOutButton.Name = "LogOutButton";
             LogOutButton.Size = new Size(59, 28);
             LogOutButton.TabIndex = 5;
@@ -124,9 +134,9 @@
             label23.Font = new Font("Trebuchet MS", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23.Location = new Point(235, 136);
             label23.Name = "label23";
-            label23.Size = new Size(300, 46);
+            label23.Size = new Size(289, 46);
             label23.TabIndex = 2;
-            label23.Text = "MANGA INDIFICA";
+            label23.Text = "MANGI INDIFICA";
             label23.Click += label1_Click;
             // 
             // label24
@@ -151,11 +161,96 @@
             label25.TabIndex = 4;
             label25.Text = "About us";
             // 
+            // label2
+            // 
+            label2.Font = new Font("Trebuchet MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(41, 719);
+            label2.Name = "label2";
+            label2.Size = new Size(697, 117);
+            label2.TabIndex = 6;
+            label2.Text = resources.GetString("label2.Text");
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Aquamarine;
+            label1.Location = new Point(41, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(124, 15);
+            label1.TabIndex = 0;
+            label1.Text = "How can we help you?";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Transparent;
+            label3.Location = new Point(36, 76);
+            label3.Name = "label3";
+            label3.Size = new Size(154, 29);
+            label3.TabIndex = 1;
+            label3.Text = "Contact us";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Transparent;
+            label4.Location = new Point(37, 128);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 15);
+            label4.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(111, 78, 55);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.ImeMode = ImeMode.Disable;
+            panel1.Location = new Point(0, 836);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(771, 269);
+            panel1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Transparent;
+            label5.Location = new Point(41, 105);
+            label5.Name = "label5";
+            label5.Size = new Size(257, 38);
+            label5.TabIndex = 7;
+            label5.Text = "We're here to help and answer questions you might have. We look forward to hearing from you!";
+            // 
+            // button1
+            // 
+            button1.AllowDrop = true;
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(43, 137);
+            button1.Name = "button1";
+            button1.Size = new Size(37, 33);
+            button1.TabIndex = 8;
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Home_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            Controls.Add(label2);
+            Controls.Add(panel1);
             Controls.Add(label25);
             Controls.Add(label24);
             Controls.Add(label23);
@@ -163,10 +258,12 @@
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Home_Page";
-            Size = new Size(703, 399);
+            Size = new Size(771, 450);
             Navigations.ResumeLayout(false);
             Navigations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -182,5 +279,12 @@
         private Label label23;
         private Label label24;
         private Label label25;
+        private Label label2;
+        private Label label1;
+        private Label label3;
+        private Label label4;
+        private Panel panel1;
+        private Label label5;
+        private Button button1;
     }
 }
