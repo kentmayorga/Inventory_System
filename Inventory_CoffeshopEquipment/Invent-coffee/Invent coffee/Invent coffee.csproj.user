@@ -5,6 +5,9 @@
     <Compile Update="Cart_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ForgotPassword_Page.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Home_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>

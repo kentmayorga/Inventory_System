@@ -41,7 +41,7 @@ namespace Invent_coffee
         }
         private void Username_txtBox_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
@@ -85,17 +85,25 @@ namespace Invent_coffee
                 return;
             }
 
-            if(AppSession.role == "admin"){
+            if (AppSession.role == "admin")
+            {
                 _mainform.ShowAdminPage();
-            } else {
-                 _mainform.ShowHomePage();
             }
-               
+            else
+            {
+                _mainform.ShowHomePage();
+            }
+
         }
 
         private void RegistrationBtn_Click(object sender, EventArgs e)
         {
             _mainform.ShowRegistrationPage();
+        }
+
+        private void ForgotpassLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _mainform.ShowForgotPasswordPage();
         }
     }
 }

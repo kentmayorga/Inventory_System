@@ -42,6 +42,7 @@
             RegistrationBtn = new Button();
             errorProviderUsername = new ErrorProvider(components);
             ErrorMessageLabel = new Label();
+            ForgotpassLabel = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)BrandPicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProviderUsername).BeginInit();
             SuspendLayout();
@@ -173,11 +174,24 @@
             ErrorMessageLabel.AutoSize = true;
             ErrorMessageLabel.ForeColor = Color.Red;
             errorProviderUsername.SetIconAlignment(ErrorMessageLabel, ErrorIconAlignment.MiddleLeft);
-            ErrorMessageLabel.Location = new Point(274, 356);
+            ErrorMessageLabel.Location = new Point(274, 382);
             ErrorMessageLabel.Name = "ErrorMessageLabel";
             ErrorMessageLabel.Size = new Size(38, 15);
             ErrorMessageLabel.TabIndex = 16;
             ErrorMessageLabel.Text = "label1";
+            // 
+            // ForgotpassLabel
+            // 
+            ForgotpassLabel.ActiveLinkColor = Color.Black;
+            ForgotpassLabel.AutoSize = true;
+            ForgotpassLabel.LinkColor = Color.Black;
+            ForgotpassLabel.Location = new Point(342, 354);
+            ForgotpassLabel.Name = "ForgotpassLabel";
+            ForgotpassLabel.Size = new Size(100, 15);
+            ForgotpassLabel.TabIndex = 17;
+            ForgotpassLabel.TabStop = true;
+            ForgotpassLabel.Text = "Forgot password?";
+            ForgotpassLabel.LinkClicked += ForgotpassLabel_LinkClicked;
             // 
             // Login_page
             // 
@@ -186,6 +200,7 @@
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(ForgotpassLabel);
             Controls.Add(ErrorMessageLabel);
             Controls.Add(RegistrationBtn);
             Controls.Add(SignUpLabel);
@@ -220,5 +235,6 @@
         private Button RegistrationBtn;
         private ErrorProvider errorProviderUsername;
         private Label ErrorMessageLabel;
+        private LinkLabel ForgotpassLabel;
     }
 }
