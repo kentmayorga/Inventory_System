@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shop_Page));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             Navigations = new Panel();
             Cart = new Button();
             HomeButton = new Button();
@@ -64,28 +67,30 @@
             // 
             // Cart
             // 
+            Cart.BackColor = Color.Transparent;
             Cart.Location = new Point(609, 10);
             Cart.Name = "Cart";
             Cart.Size = new Size(75, 23);
             Cart.TabIndex = 9;
             Cart.Text = "Cart";
-            Cart.UseVisualStyleBackColor = true;
+            Cart.UseVisualStyleBackColor = false;
             Cart.Click += Cart_Click;
             // 
             // HomeButton
             // 
             HomeButton.AllowDrop = true;
             HomeButton.BackColor = Color.Transparent;
+            HomeButton.BackgroundImage = (Image)resources.GetObject("HomeButton.BackgroundImage");
+            HomeButton.BackgroundImageLayout = ImageLayout.Stretch;
             HomeButton.FlatAppearance.BorderSize = 0;
             HomeButton.FlatAppearance.MouseOverBackColor = Color.Black;
             HomeButton.FlatStyle = FlatStyle.Flat;
             HomeButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             HomeButton.ForeColor = Color.White;
-            HomeButton.Location = new Point(11, 11);
+            HomeButton.Location = new Point(7, -1);
             HomeButton.Name = "HomeButton";
-            HomeButton.Size = new Size(63, 24);
+            HomeButton.Size = new Size(63, 43);
             HomeButton.TabIndex = 8;
-            HomeButton.Text = "HOME";
             HomeButton.UseVisualStyleBackColor = false;
             HomeButton.Click += HomeButton_Click_1;
             // 
@@ -93,15 +98,16 @@
             // 
             LocationButton.AllowDrop = true;
             LocationButton.BackColor = Color.Transparent;
+            LocationButton.BackgroundImage = (Image)resources.GetObject("LocationButton.BackgroundImage");
+            LocationButton.BackgroundImageLayout = ImageLayout.Stretch;
             LocationButton.FlatAppearance.BorderSize = 0;
             LocationButton.FlatStyle = FlatStyle.Flat;
             LocationButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LocationButton.ForeColor = Color.White;
-            LocationButton.Location = new Point(146, 10);
+            LocationButton.Location = new Point(160, 7);
             LocationButton.Name = "LocationButton";
-            LocationButton.Size = new Size(98, 24);
+            LocationButton.Size = new Size(45, 31);
             LocationButton.TabIndex = 7;
-            LocationButton.Text = "LOCATION";
             LocationButton.UseVisualStyleBackColor = false;
             // 
             // ShopButton
@@ -133,9 +139,13 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = Color.Bisque;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(0, 41);
             dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(111, 78, 55);
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Size = new Size(548, 374);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellMouseClick += dataGridView1_CellMouseClick;
@@ -143,31 +153,34 @@
             // ProductName
             // 
             ProductName.AutoSize = true;
+            ProductName.BackColor = Color.Transparent;
             ProductName.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProductName.ForeColor = Color.White;
+            ProductName.ForeColor = Color.Black;
             ProductName.Location = new Point(554, 58);
             ProductName.Name = "ProductName";
-            ProductName.Size = new Size(42, 18);
+            ProductName.Size = new Size(47, 18);
             ProductName.TabIndex = 3;
-            ProductName.Text = "Name";
+            ProductName.Text = "Name:";
             // 
             // ProductDescription
             // 
             ProductDescription.AutoSize = true;
+            ProductDescription.BackColor = Color.Transparent;
             ProductDescription.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
-            ProductDescription.ForeColor = Color.White;
+            ProductDescription.ForeColor = Color.Black;
             ProductDescription.Location = new Point(554, 84);
             ProductDescription.Name = "ProductDescription";
-            ProductDescription.Size = new Size(78, 18);
+            ProductDescription.Size = new Size(83, 18);
             ProductDescription.TabIndex = 4;
-            ProductDescription.Text = "Description";
+            ProductDescription.Text = "Description:";
             ProductDescription.Click += ProductDescription_Click;
             // 
             // ProductPrice
             // 
             ProductPrice.AutoSize = true;
+            ProductPrice.BackColor = Color.Transparent;
             ProductPrice.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
-            ProductPrice.ForeColor = Color.White;
+            ProductPrice.ForeColor = Color.Black;
             ProductPrice.Location = new Point(554, 114);
             ProductPrice.Name = "ProductPrice";
             ProductPrice.Size = new Size(40, 18);
@@ -184,8 +197,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Trebuchet MS", 9.75F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(559, 307);
             label1.Name = "label1";
             label1.Size = new Size(61, 18);
@@ -204,9 +218,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(622, 185);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Location = new Point(559, 145);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(200, 148);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
@@ -215,6 +232,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(99, 72, 50);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(pictureBox1);
             Controls.Add(AddToCartButton);
             Controls.Add(label1);
